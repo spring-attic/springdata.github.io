@@ -1,0 +1,11 @@
+org.springdata.cassandra.config
+org.springdata.cassandra.config.java
+org.springdata.cassandra.config.xml
+org.springdata.cassandra.convert
+org.springdata.cassandra.core
+org.springdata.cassandra.mapping
+org.springdata.cassandra.repository
+org.springdata.cassandra.repository.config
+org.springdata.cassandra.repository.query
+org.springdata.cassandra.repository.support
+org.springdata.cassandra.util
