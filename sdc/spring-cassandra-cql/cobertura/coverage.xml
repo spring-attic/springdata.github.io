@@ -1,11 +1,10 @@
 <?xml version="1.0"?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
 
-<coverage line-rate="0.5809105869445969" branch-rate="0.4642857142857143" lines-covered="1059" lines-valid="1823" branches-covered="221" branches-valid="476" complexity="1.518624641833811" version="1.9.4.1" timestamp="1391493795407">
+<coverage line-rate="0.577572128470332" branch-rate="0.4642857142857143" lines-covered="1061" lines-valid="1837" branches-covered="221" branches-valid="476" complexity="1.4986225895316805" version="1.9.4.1" timestamp="1392579428354">
 	<sources>
 		<source>--source</source>
 		<source>/Users/ashvid/Work/spring/workspace/spring-data-cassandra/cassandra-cql/src/main/java</source>
-		<source>/Users/ashvid/Work/spring/workspace/spring-data-cassandra/cassandra-cql/target/generated-sources/it-dependencies</source>
 	</sources>
 	<packages>
 		<package name="org.springdata.cassandra.cql.config" line-rate="0.9516129032258065" branch-rate="0.5" complexity="1.0">
@@ -986,7 +985,7 @@
 				</class>
 			</classes>
 		</package>
-		<package name="org.springdata.cassandra.cql.core" line-rate="0.5175619834710744" branch-rate="0.35714285714285715" complexity="1.5424657534246575">
+		<package name="org.springdata.cassandra.cql.core" line-rate="0.5122199592668024" branch-rate="0.35714285714285715" complexity="1.5038167938931297">
 			<classes>
 				<class name="org.springdata.cassandra.cql.core.AbstractQueryOperation" filename="org/springdata/cassandra/cql/core/AbstractQueryOperation.java" line-rate="0.4098360655737705" branch-rate="0.2857142857142857" complexity="1.391304347826087">
 					<methods>
@@ -1550,7 +1549,7 @@
 					<lines>
 					</lines>
 				</class>
-				<class name="org.springdata.cassandra.cql.core.CassandraClusterFactoryBean" filename="org/springdata/cassandra/cql/core/CassandraClusterFactoryBean.java" line-rate="0.8571428571428571" branch-rate="0.5555555555555556" complexity="2.4">
+				<class name="org.springdata.cassandra.cql.core.CassandraClusterFactoryBean" filename="org/springdata/cassandra/cql/core/CassandraClusterFactoryBean.java" line-rate="0.8681318681318682" branch-rate="0.5555555555555556" complexity="2.4">
 					<methods>
 						<method name="&lt;init&gt;" signature="()V" line-rate="1.0" branch-rate="1.0">
 							<lines>
@@ -1722,9 +1721,9 @@
 								<line number="200" hits="0" branch="false"/>
 							</lines>
 						</method>
-						<method name="destroy" signature="()V" line-rate="0.0" branch-rate="1.0">
+						<method name="destroy" signature="()V" line-rate="0.5" branch-rate="1.0">
 							<lines>
-								<line number="146" hits="0" branch="false"/>
+								<line number="146" hits="1" branch="false"/>
 								<line number="147" hits="0" branch="false"/>
 							</lines>
 						</method>
@@ -1740,7 +1739,7 @@
 						</method>
 						<method name="getObjectType" signature="()Ljava/lang/Class;" line-rate="1.0" branch-rate="1.0">
 							<lines>
-								<line number="76" hits="5" branch="false"/>
+								<line number="76" hits="6" branch="false"/>
 							</lines>
 						</method>
 						<method name="isSingleton" signature="()Z" line-rate="1.0" branch-rate="1.0">
@@ -1827,7 +1826,7 @@
 						<line number="65" hits="3" branch="false"/>
 						<line number="67" hits="3" branch="false"/>
 						<line number="71" hits="2" branch="false"/>
-						<line number="76" hits="5" branch="false"/>
+						<line number="76" hits="6" branch="false"/>
 						<line number="81" hits="6" branch="false"/>
 						<line number="86" hits="0" branch="false"/>
 						<line number="92" hits="2" branch="false"/>
@@ -1898,7 +1897,7 @@
 						<line number="138" hits="2" branch="false"/>
 						<line number="141" hits="2" branch="false"/>
 						<line number="142" hits="2" branch="false"/>
-						<line number="146" hits="0" branch="false"/>
+						<line number="146" hits="1" branch="false"/>
 						<line number="147" hits="0" branch="false"/>
 						<line number="150" hits="2" branch="false"/>
 						<line number="151" hits="2" branch="false"/>
@@ -2330,7 +2329,7 @@
 					<lines>
 					</lines>
 				</class>
-				<class name="org.springdata.cassandra.cql.core.CqlTemplate" filename="org/springdata/cassandra/cql/core/CqlTemplate.java" line-rate="0.7483870967741936" branch-rate="0.4166666666666667" complexity="1.736842105263158">
+				<class name="org.springdata.cassandra.cql.core.CqlTemplate" filename="org/springdata/cassandra/cql/core/CqlTemplate.java" line-rate="0.6863905325443787" branch-rate="0.4166666666666667" complexity="1.6222222222222222">
 					<methods>
 						<method name="&lt;clinit&gt;" signature="()V" line-rate="1.0" branch-rate="1.0">
 							<lines>
@@ -2350,7 +2349,7 @@
 						</method>
 						<method name="adminOps" signature="()Lorg/springdata/cassandra/cql/core/AdminCqlOperations;" line-rate="1.0" branch-rate="1.0">
 							<lines>
-								<line number="869" hits="2" branch="false"/>
+								<line number="939" hits="2" branch="false"/>
 							</lines>
 						</method>
 						<method name="afterPropertiesSet" signature="()V" line-rate="0.0" branch-rate="0.0">
@@ -2370,33 +2369,29 @@
 								<line number="104" hits="0" branch="false"/>
 							</lines>
 						</method>
-						<method name="batchUpdate" signature="(Ljava/lang/Iterable;)Lorg/springdata/cassandra/cql/core/UpdateOperation;" line-rate="0.0" branch-rate="1.0">
+						<method name="batchUpdate" signature="(Ljava/lang/Iterable;)Lcom/datastax/driver/core/ResultSet;" line-rate="0.0" branch-rate="1.0">
 							<lines>
-								<line number="221" hits="0" branch="false"/>
-								<line number="223" hits="0" branch="false"/>
+								<line number="246" hits="0" branch="false"/>
 							</lines>
 						</method>
-						<method name="batchUpdate" signature="([Ljava/lang/String;)Lorg/springdata/cassandra/cql/core/UpdateOperation;" line-rate="0.0" branch-rate="1.0">
+						<method name="batchUpdate" signature="([Ljava/lang/String;)Lcom/datastax/driver/core/ResultSet;" line-rate="0.0" branch-rate="1.0">
 							<lines>
-								<line number="197" hits="0" branch="false"/>
-								<line number="199" hits="0" branch="false"/>
-								<line number="209" hits="0" branch="false"/>
+								<line number="217" hits="0" branch="false"/>
 							</lines>
 						</method>
 						<method name="bind" signature="(Lcom/datastax/driver/core/PreparedStatement;)Lcom/datastax/driver/core/BoundStatement;" line-rate="1.0" branch-rate="1.0">
 							<lines>
-								<line number="754" hits="3" branch="false"/>
+								<line number="804" hits="3" branch="false"/>
 							</lines>
 						</method>
 						<method name="bind" signature="(Lcom/datastax/driver/core/PreparedStatement;Lorg/springdata/cassandra/cql/core/PreparedStatementBinder;)Lcom/datastax/driver/core/BoundStatement;" line-rate="1.0" branch-rate="1.0">
 							<lines>
-								<line number="759" hits="4" branch="false"/>
+								<line number="809" hits="4" branch="false"/>
 							</lines>
 						</method>
-						<method name="countAll" signature="(Ljava/lang/String;)Lorg/springdata/cassandra/cql/core/ProcessOperation;" line-rate="0.0" branch-rate="1.0">
+						<method name="countAll" signature="(Ljava/lang/String;)Ljava/lang/Long;" line-rate="0.0" branch-rate="1.0">
 							<lines>
-								<line number="841" hits="0" branch="false"/>
-								<line number="843" hits="0" branch="false"/>
+								<line number="901" hits="0" branch="false"/>
 							</lines>
 						</method>
 						<method name="createQuery" signature="(Lorg/springdata/cassandra/cql/core/QueryCreator;)Lcom/datastax/driver/core/Query;" line-rate="1.0" branch-rate="1.0">
@@ -2407,107 +2402,107 @@
 						</method>
 						<method name="describeRing" signature="()Ljava/util/List;" line-rate="1.0" branch-rate="1.0">
 							<lines>
-								<line number="408" hits="1" branch="false"/>
+								<line number="458" hits="1" branch="false"/>
 							</lines>
 						</method>
 						<method name="describeRing" signature="(Lorg/springdata/cassandra/cql/core/HostMapper;)Ljava/util/List;" line-rate="1.0" branch-rate="1.0">
 							<lines>
-								<line number="458" hits="2" branch="false"/>
-								<line number="460" hits="2" branch="false"/>
-								<line number="462" hits="2" branch="false"/>
-								<line number="463" hits="2" branch="true" condition-coverage="100% (2/2)">
+								<line number="508" hits="2" branch="false"/>
+								<line number="510" hits="2" branch="false"/>
+								<line number="512" hits="2" branch="false"/>
+								<line number="513" hits="2" branch="true" condition-coverage="100% (2/2)">
 									<conditions>
 										<condition number="0" type="jump" coverage="100%"/>
 									</conditions>
 								</line>
-								<line number="464" hits="2" branch="false"/>
-								<line number="465" hits="2" branch="false"/>
-								<line number="466" hits="2" branch="false"/>
-								<line number="468" hits="2" branch="false"/>
+								<line number="514" hits="2" branch="false"/>
+								<line number="515" hits="2" branch="false"/>
+								<line number="516" hits="2" branch="false"/>
+								<line number="518" hits="2" branch="false"/>
 							</lines>
 						</method>
 						<method name="doBind" signature="(Lcom/datastax/driver/core/PreparedStatement;Lorg/springdata/cassandra/cql/core/PreparedStatementBinder;)Lcom/datastax/driver/core/BoundStatement;" line-rate="1.0" branch-rate="1.0">
 							<lines>
-								<line number="731" hits="80" branch="false"/>
-								<line number="733" hits="80" branch="false"/>
+								<line number="781" hits="80" branch="false"/>
+								<line number="783" hits="80" branch="false"/>
 							</lines>
 						</method>
 						<method name="doCreateQuery" signature="(Lorg/springdata/cassandra/cql/core/QueryCreator;)Lcom/datastax/driver/core/Query;" line-rate="0.3333333333333333" branch-rate="1.0">
 							<lines>
-								<line number="289" hits="19" branch="false"/>
-								<line number="291" hits="0" branch="false"/>
-								<line number="292" hits="0" branch="false"/>
+								<line number="339" hits="19" branch="false"/>
+								<line number="341" hits="0" branch="false"/>
+								<line number="342" hits="0" branch="false"/>
 							</lines>
 						</method>
 						<method name="doExecute" signature="(Lcom/datastax/driver/core/PreparedStatement;Lorg/springdata/cassandra/cql/core/PreparedStatementCallback;)Ljava/lang/Object;" line-rate="1.0" branch-rate="1.0">
 							<lines>
-								<line number="701" hits="2" branch="false"/>
+								<line number="751" hits="2" branch="false"/>
 							</lines>
 						</method>
 						<method name="doExecute" signature="(Lcom/datastax/driver/core/Query;)Lcom/datastax/driver/core/ResultSet;" line-rate="0.25" branch-rate="0.25">
 							<lines>
-								<line number="321" hits="56" branch="true" condition-coverage="50% (1/2)">
+								<line number="371" hits="56" branch="true" condition-coverage="50% (1/2)">
 									<conditions>
 										<condition number="0" type="jump" coverage="50%"/>
 									</conditions>
 								</line>
-								<line number="322" hits="0" branch="false"/>
-								<line number="327" hits="56" branch="false"/>
-								<line number="329" hits="0" branch="false"/>
-								<line number="330" hits="0" branch="false"/>
-								<line number="331" hits="0" branch="true" condition-coverage="0% (0/2)">
+								<line number="372" hits="0" branch="false"/>
+								<line number="377" hits="56" branch="false"/>
+								<line number="379" hits="0" branch="false"/>
+								<line number="380" hits="0" branch="false"/>
+								<line number="381" hits="0" branch="true" condition-coverage="0% (0/2)">
 									<conditions>
 										<condition number="0" type="jump" coverage="0%"/>
 									</conditions>
 								</line>
-								<line number="332" hits="0" branch="false"/>
-								<line number="334" hits="0" branch="false"/>
+								<line number="382" hits="0" branch="false"/>
+								<line number="384" hits="0" branch="false"/>
 							</lines>
 						</method>
 						<method name="doExecute" signature="(Lorg/springdata/cassandra/cql/core/SessionCallback;)Ljava/lang/Object;" line-rate="0.3333333333333333" branch-rate="1.0">
 							<lines>
-								<line number="306" hits="142" branch="false"/>
-								<line number="308" hits="0" branch="false"/>
-								<line number="309" hits="0" branch="false"/>
+								<line number="356" hits="142" branch="false"/>
+								<line number="358" hits="0" branch="false"/>
+								<line number="359" hits="0" branch="false"/>
 							</lines>
 						</method>
 						<method name="doExecuteAsync" signature="(Lcom/datastax/driver/core/Query;)Lcom/datastax/driver/core/ResultSetFuture;" line-rate="0.25" branch-rate="0.25">
 							<lines>
-								<line number="347" hits="52" branch="true" condition-coverage="50% (1/2)">
+								<line number="397" hits="52" branch="true" condition-coverage="50% (1/2)">
 									<conditions>
 										<condition number="0" type="jump" coverage="50%"/>
 									</conditions>
 								</line>
-								<line number="348" hits="0" branch="false"/>
-								<line number="353" hits="52" branch="false"/>
-								<line number="355" hits="0" branch="false"/>
-								<line number="356" hits="0" branch="false"/>
-								<line number="357" hits="0" branch="true" condition-coverage="0% (0/2)">
+								<line number="398" hits="0" branch="false"/>
+								<line number="403" hits="52" branch="false"/>
+								<line number="405" hits="0" branch="false"/>
+								<line number="406" hits="0" branch="false"/>
+								<line number="407" hits="0" branch="true" condition-coverage="0% (0/2)">
 									<conditions>
 										<condition number="0" type="jump" coverage="0%"/>
 									</conditions>
 								</line>
-								<line number="358" hits="0" branch="false"/>
-								<line number="360" hits="0" branch="false"/>
+								<line number="408" hits="0" branch="false"/>
+								<line number="410" hits="0" branch="false"/>
 							</lines>
 						</method>
 						<method name="doPrepareStatement" signature="(Lorg/springdata/cassandra/cql/core/PreparedStatementCreator;)Lcom/datastax/driver/core/PreparedStatement;" line-rate="1.0" branch-rate="1.0">
 							<lines>
-								<line number="676" hits="55" branch="false"/>
+								<line number="726" hits="55" branch="false"/>
 							</lines>
 						</method>
 						<method name="doProcess" signature="(Lcom/datastax/driver/core/ResultSet;Lorg/springdata/cassandra/cql/core/ResultSetExtractor;)Ljava/lang/Object;" line-rate="1.0" branch-rate="1.0">
 							<lines>
-								<line number="449" hits="58" branch="false"/>
-								<line number="451" hits="1" branch="false"/>
-								<line number="452" hits="1" branch="false"/>
+								<line number="499" hits="58" branch="false"/>
+								<line number="501" hits="1" branch="false"/>
+								<line number="502" hits="1" branch="false"/>
 							</lines>
 						</method>
 						<method name="execute" signature="(Lcom/datastax/driver/core/PreparedStatement;Lorg/springdata/cassandra/cql/core/PreparedStatementCallback;)Ljava/lang/Object;" line-rate="1.0" branch-rate="1.0">
 							<lines>
-								<line number="714" hits="2" branch="false"/>
-								<line number="715" hits="2" branch="false"/>
-								<line number="717" hits="2" branch="false"/>
+								<line number="764" hits="2" branch="false"/>
+								<line number="765" hits="2" branch="false"/>
+								<line number="767" hits="2" branch="false"/>
 							</lines>
 						</method>
 						<method name="execute" signature="(Lorg/springdata/cassandra/cql/core/SessionCallback;)Ljava/lang/Object;" line-rate="1.0" branch-rate="1.0">
@@ -2518,20 +2513,39 @@
 						</method>
 						<method name="firstColumnToObject" signature="(Lcom/datastax/driver/core/Row;)Ljava/lang/Object;" line-rate="0.6666666666666666" branch-rate="0.5">
 							<lines>
-								<line number="372" hits="10" branch="true" condition-coverage="50% (1/2)">
+								<line number="422" hits="10" branch="true" condition-coverage="50% (1/2)">
 									<conditions>
 										<condition number="0" type="jump" coverage="50%"/>
 									</conditions>
 								</line>
-								<line number="373" hits="0" branch="false"/>
-								<line number="376" hits="10" branch="false"/>
-								<line number="377" hits="10" branch="true" condition-coverage="50% (1/2)">
+								<line number="423" hits="0" branch="false"/>
+								<line number="426" hits="10" branch="false"/>
+								<line number="427" hits="10" branch="true" condition-coverage="50% (1/2)">
 									<conditions>
 										<condition number="0" type="jump" coverage="50%"/>
 									</conditions>
 								</line>
-								<line number="378" hits="0" branch="false"/>
-								<line number="380" hits="10" branch="false"/>
+								<line number="428" hits="0" branch="false"/>
+								<line number="430" hits="10" branch="false"/>
+							</lines>
+						</method>
+						<method name="getBatchUpdateOperation" signature="(Ljava/lang/Iterable;)Lorg/springdata/cassandra/cql/core/UpdateOperation;" line-rate="0.0" branch-rate="1.0">
+							<lines>
+								<line number="251" hits="0" branch="false"/>
+								<line number="253" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="getBatchUpdateOperation" signature="([Ljava/lang/String;)Lorg/springdata/cassandra/cql/core/UpdateOperation;" line-rate="0.0" branch-rate="1.0">
+							<lines>
+								<line number="222" hits="0" branch="false"/>
+								<line number="224" hits="0" branch="false"/>
+								<line number="234" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="getCountAllOperation" signature="(Ljava/lang/String;)Lorg/springdata/cassandra/cql/core/ProcessOperation;" line-rate="0.0" branch-rate="1.0">
+							<lines>
+								<line number="906" hits="0" branch="false"/>
+								<line number="908" hits="0" branch="false"/>
 							</lines>
 						</method>
 						<method name="getExceptionTranslator" signature="()Lorg/springdata/cassandra/cql/support/CassandraExceptionTranslator;" line-rate="1.0" branch-rate="1.0">
@@ -2541,9 +2555,26 @@
 						</method>
 						<method name="getHosts" signature="()Ljava/util/Set;" line-rate="1.0" branch-rate="1.0">
 							<lines>
-								<line number="421" hits="2" branch="false"/>
-								<line number="433" hits="2" branch="false"/>
-								<line number="435" hits="2" branch="false"/>
+								<line number="471" hits="2" branch="false"/>
+								<line number="483" hits="2" branch="false"/>
+								<line number="485" hits="2" branch="false"/>
+							</lines>
+						</method>
+						<method name="getIngestOperation" signature="(Lcom/datastax/driver/core/PreparedStatement;Ljava/lang/Iterable;)Lorg/springdata/cassandra/cql/core/IngestOperation;" line-rate="1.0" branch-rate="1.0">
+							<lines>
+								<line number="820" hits="14" branch="false"/>
+								<line number="821" hits="14" branch="false"/>
+								<line number="823" hits="14" branch="false"/>
+								<line number="840" hits="14" branch="false"/>
+							</lines>
+						</method>
+						<method name="getIngestOperation" signature="(Lcom/datastax/driver/core/PreparedStatement;[[Ljava/lang/Object;)Lorg/springdata/cassandra/cql/core/IngestOperation;" line-rate="1.0" branch-rate="1.0">
+							<lines>
+								<line number="852" hits="13" branch="false"/>
+								<line number="853" hits="13" branch="false"/>
+								<line number="854" hits="13" branch="false"/>
+								<line number="856" hits="13" branch="false"/>
+								<line number="858" hits="13" branch="false"/>
 							</lines>
 						</method>
 						<method name="getKeyspace" signature="()Ljava/lang/String;" line-rate="0.0" branch-rate="1.0">
@@ -2551,118 +2582,161 @@
 								<line number="125" hits="0" branch="false"/>
 							</lines>
 						</method>
+						<method name="getSelectOperation" signature="(Lcom/datastax/driver/core/BoundStatement;)Lorg/springdata/cassandra/cql/core/SelectOperation;" line-rate="1.0" branch-rate="1.0">
+							<lines>
+								<line number="313" hits="4" branch="false"/>
+								<line number="314" hits="4" branch="false"/>
+							</lines>
+						</method>
+						<method name="getSelectOperation" signature="(Lcom/datastax/driver/core/PreparedStatement;Lorg/springdata/cassandra/cql/core/PreparedStatementBinder;)Lorg/springdata/cassandra/cql/core/SelectOperation;" line-rate="1.0" branch-rate="1.0">
+							<lines>
+								<line number="301" hits="31" branch="false"/>
+								<line number="302" hits="31" branch="false"/>
+								<line number="303" hits="31" branch="false"/>
+							</lines>
+						</method>
+						<method name="getSelectOperation" signature="(Ljava/lang/String;)Lorg/springdata/cassandra/cql/core/SelectOperation;" line-rate="1.0" branch-rate="1.0">
+							<lines>
+								<line number="289" hits="12" branch="false"/>
+								<line number="290" hits="12" branch="false"/>
+								<line number="291" hits="12" branch="false"/>
+							</lines>
+						</method>
+						<method name="getSelectOperation" signature="(Lorg/springdata/cassandra/cql/core/QueryCreator;)Lorg/springdata/cassandra/cql/core/SelectOperation;" line-rate="1.0" branch-rate="1.0">
+							<lines>
+								<line number="324" hits="12" branch="false"/>
+								<line number="325" hits="12" branch="false"/>
+								<line number="326" hits="12" branch="false"/>
+							</lines>
+						</method>
 						<method name="getSession" signature="()Lcom/datastax/driver/core/Session;" line-rate="1.0" branch-rate="1.0">
 							<lines>
 								<line number="110" hits="250" branch="false"/>
 							</lines>
 						</method>
-						<method name="ingest" signature="(Lcom/datastax/driver/core/PreparedStatement;Ljava/lang/Iterable;)Lorg/springdata/cassandra/cql/core/IngestOperation;" line-rate="1.0" branch-rate="1.0">
+						<method name="getTruncateOperation" signature="(Ljava/lang/String;)Lorg/springdata/cassandra/cql/core/UpdateOperation;" line-rate="1.0" branch-rate="1.0">
 							<lines>
-								<line number="765" hits="14" branch="false"/>
-								<line number="766" hits="14" branch="false"/>
-								<line number="768" hits="14" branch="false"/>
-								<line number="785" hits="14" branch="false"/>
+								<line number="926" hits="1" branch="false"/>
+								<line number="927" hits="1" branch="false"/>
 							</lines>
 						</method>
-						<method name="ingest" signature="(Lcom/datastax/driver/core/PreparedStatement;[[Ljava/lang/Object;)Lorg/springdata/cassandra/cql/core/IngestOperation;" line-rate="1.0" branch-rate="1.0">
+						<method name="getUpdateOperation" signature="(Lcom/datastax/driver/core/BoundStatement;)Lorg/springdata/cassandra/cql/core/UpdateOperation;" line-rate="0.0" branch-rate="1.0">
 							<lines>
-								<line number="792" hits="13" branch="false"/>
-								<line number="793" hits="13" branch="false"/>
-								<line number="794" hits="13" branch="false"/>
-								<line number="796" hits="13" branch="false"/>
-								<line number="798" hits="13" branch="false"/>
+								<line number="193" hits="0" branch="false"/>
+								<line number="194" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="getUpdateOperation" signature="(Lcom/datastax/driver/core/PreparedStatement;Lorg/springdata/cassandra/cql/core/PreparedStatementBinder;)Lorg/springdata/cassandra/cql/core/UpdateOperation;" line-rate="0.0" branch-rate="1.0">
+							<lines>
+								<line number="182" hits="0" branch="false"/>
+								<line number="183" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="getUpdateOperation" signature="(Ljava/lang/String;)Lorg/springdata/cassandra/cql/core/UpdateOperation;" line-rate="1.0" branch-rate="1.0">
+							<lines>
+								<line number="171" hits="1" branch="false"/>
+								<line number="172" hits="1" branch="false"/>
+							</lines>
+						</method>
+						<method name="getUpdateOperation" signature="(Lorg/springdata/cassandra/cql/core/QueryCreator;)Lorg/springdata/cassandra/cql/core/UpdateOperation;" line-rate="1.0" branch-rate="1.0">
+							<lines>
+								<line number="211" hits="1" branch="false"/>
+								<line number="212" hits="1" branch="false"/>
+							</lines>
+						</method>
+						<method name="ingest" signature="(Lcom/datastax/driver/core/PreparedStatement;Ljava/lang/Iterable;)Ljava/util/List;" line-rate="0.0" branch-rate="1.0">
+							<lines>
+								<line number="814" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="ingest" signature="(Lcom/datastax/driver/core/PreparedStatement;[[Ljava/lang/Object;)Ljava/util/List;" line-rate="0.0" branch-rate="1.0">
+							<lines>
+								<line number="846" hits="0" branch="false"/>
 							</lines>
 						</method>
 						<method name="prepareStatement" signature="(Ljava/lang/String;)Lcom/datastax/driver/core/PreparedStatement;" line-rate="1.0" branch-rate="1.0">
 							<lines>
-								<line number="654" hits="48" branch="false"/>
-								<line number="655" hits="48" branch="false"/>
+								<line number="704" hits="48" branch="false"/>
+								<line number="705" hits="48" branch="false"/>
 							</lines>
 						</method>
 						<method name="prepareStatement" signature="(Lorg/springdata/cassandra/cql/core/PreparedStatementCreator;)Lcom/datastax/driver/core/PreparedStatement;" line-rate="1.0" branch-rate="1.0">
 							<lines>
-								<line number="660" hits="7" branch="false"/>
-								<line number="661" hits="7" branch="false"/>
+								<line number="710" hits="7" branch="false"/>
+								<line number="711" hits="7" branch="false"/>
 							</lines>
 						</method>
 						<method name="process" signature="(Lcom/datastax/driver/core/ResultSet;Lorg/springdata/cassandra/cql/core/RowCallbackHandler;)V" line-rate="1.0" branch-rate="1.0">
 							<lines>
-								<line number="473" hits="5" branch="false"/>
-								<line number="474" hits="5" branch="false"/>
-								<line number="476" hits="5" branch="false"/>
-								<line number="489" hits="5" branch="false"/>
+								<line number="523" hits="5" branch="false"/>
+								<line number="524" hits="5" branch="false"/>
+								<line number="526" hits="5" branch="false"/>
+								<line number="539" hits="5" branch="false"/>
 							</lines>
 						</method>
 						<method name="process" signature="(Lcom/datastax/driver/core/ResultSet;Lorg/springdata/cassandra/cql/core/RowMapper;)Ljava/util/List;" line-rate="1.0" branch-rate="1.0">
 							<lines>
-								<line number="493" hits="5" branch="false"/>
-								<line number="494" hits="5" branch="false"/>
-								<line number="496" hits="5" branch="false"/>
+								<line number="543" hits="5" branch="false"/>
+								<line number="544" hits="5" branch="false"/>
+								<line number="546" hits="5" branch="false"/>
 							</lines>
 						</method>
 						<method name="processAsMap" signature="(Lcom/datastax/driver/core/ResultSet;)Ljava/util/List;" line-rate="1.0" branch-rate="1.0">
 							<lines>
-								<line number="630" hits="2" branch="false"/>
-								<line number="632" hits="2" branch="false"/>
+								<line number="680" hits="2" branch="false"/>
+								<line number="682" hits="2" branch="false"/>
 							</lines>
 						</method>
 						<method name="processFirstColumn" signature="(Lcom/datastax/driver/core/ResultSet;Ljava/lang/Class;)Ljava/util/List;" line-rate="1.0" branch-rate="1.0">
 							<lines>
-								<line number="606" hits="2" branch="false"/>
-								<line number="607" hits="2" branch="false"/>
-								<line number="609" hits="2" branch="false"/>
+								<line number="656" hits="2" branch="false"/>
+								<line number="657" hits="2" branch="false"/>
+								<line number="659" hits="2" branch="false"/>
 							</lines>
 						</method>
 						<method name="processOne" signature="(Lcom/datastax/driver/core/ResultSet;Lorg/springdata/cassandra/cql/core/RowMapper;Z)Ljava/lang/Object;" line-rate="1.0" branch-rate="1.0">
 							<lines>
-								<line number="519" hits="3" branch="false"/>
-								<line number="520" hits="3" branch="false"/>
-								<line number="522" hits="3" branch="false"/>
+								<line number="569" hits="3" branch="false"/>
+								<line number="570" hits="3" branch="false"/>
+								<line number="572" hits="3" branch="false"/>
 							</lines>
 						</method>
 						<method name="processOneAsMap" signature="(Lcom/datastax/driver/core/ResultSet;Z)Ljava/util/Map;" line-rate="1.0" branch-rate="1.0">
 							<lines>
-								<line number="577" hits="2" branch="false"/>
-								<line number="579" hits="2" branch="false"/>
+								<line number="627" hits="2" branch="false"/>
+								<line number="629" hits="2" branch="false"/>
 							</lines>
 						</method>
 						<method name="processOneFirstColumn" signature="(Lcom/datastax/driver/core/ResultSet;Ljava/lang/Class;Z)Ljava/lang/Object;" line-rate="1.0" branch-rate="1.0">
 							<lines>
-								<line number="548" hits="4" branch="false"/>
-								<line number="549" hits="4" branch="false"/>
-								<line number="551" hits="4" branch="false"/>
+								<line number="598" hits="4" branch="false"/>
+								<line number="599" hits="4" branch="false"/>
+								<line number="601" hits="4" branch="false"/>
 							</lines>
 						</method>
 						<method name="schemaOps" signature="()Lorg/springdata/cassandra/cql/core/SchemaCqlOperations;" line-rate="0.0" branch-rate="1.0">
 							<lines>
-								<line number="874" hits="0" branch="false"/>
+								<line number="944" hits="0" branch="false"/>
 							</lines>
 						</method>
-						<method name="select" signature="(Lcom/datastax/driver/core/BoundStatement;)Lorg/springdata/cassandra/cql/core/SelectOperation;" line-rate="1.0" branch-rate="1.0">
+						<method name="select" signature="(Lcom/datastax/driver/core/BoundStatement;)Lcom/datastax/driver/core/ResultSet;" line-rate="0.0" branch-rate="1.0">
 							<lines>
-								<line number="268" hits="4" branch="false"/>
-								<line number="269" hits="4" branch="false"/>
+								<line number="308" hits="0" branch="false"/>
 							</lines>
 						</method>
-						<method name="select" signature="(Lcom/datastax/driver/core/PreparedStatement;Lorg/springdata/cassandra/cql/core/PreparedStatementBinder;)Lorg/springdata/cassandra/cql/core/SelectOperation;" line-rate="1.0" branch-rate="1.0">
+						<method name="select" signature="(Lcom/datastax/driver/core/PreparedStatement;Lorg/springdata/cassandra/cql/core/PreparedStatementBinder;)Lcom/datastax/driver/core/ResultSet;" line-rate="0.0" branch-rate="1.0">
 							<lines>
-								<line number="261" hits="31" branch="false"/>
-								<line number="262" hits="31" branch="false"/>
-								<line number="263" hits="31" branch="false"/>
+								<line number="296" hits="0" branch="false"/>
 							</lines>
 						</method>
-						<method name="select" signature="(Ljava/lang/String;)Lorg/springdata/cassandra/cql/core/SelectOperation;" line-rate="1.0" branch-rate="1.0">
+						<method name="select" signature="(Ljava/lang/String;)Lcom/datastax/driver/core/ResultSet;" line-rate="0.0" branch-rate="1.0">
 							<lines>
-								<line number="254" hits="12" branch="false"/>
-								<line number="255" hits="12" branch="false"/>
-								<line number="256" hits="12" branch="false"/>
+								<line number="284" hits="0" branch="false"/>
 							</lines>
 						</method>
-						<method name="select" signature="(Lorg/springdata/cassandra/cql/core/QueryCreator;)Lorg/springdata/cassandra/cql/core/SelectOperation;" line-rate="1.0" branch-rate="1.0">
+						<method name="select" signature="(Lorg/springdata/cassandra/cql/core/QueryCreator;)Lcom/datastax/driver/core/ResultSet;" line-rate="0.0" branch-rate="1.0">
 							<lines>
-								<line number="274" hits="12" branch="false"/>
-								<line number="275" hits="12" branch="false"/>
-								<line number="276" hits="12" branch="false"/>
+								<line number="319" hits="0" branch="false"/>
 							</lines>
 						</method>
 						<method name="setExceptionTranslator" signature="(Lorg/springdata/cassandra/cql/support/CassandraExceptionTranslator;)V" line-rate="0.0" branch-rate="1.0">
@@ -2687,64 +2761,59 @@
 						</method>
 						<method name="toMap" signature="(Lcom/datastax/driver/core/Row;)Ljava/util/Map;" line-rate="0.9" branch-rate="0.75">
 							<lines>
-								<line number="390" hits="8" branch="true" condition-coverage="50% (1/2)">
+								<line number="440" hits="8" branch="true" condition-coverage="50% (1/2)">
 									<conditions>
 										<condition number="0" type="jump" coverage="50%"/>
 									</conditions>
 								</line>
-								<line number="391" hits="0" branch="false"/>
-								<line number="394" hits="8" branch="false"/>
-								<line number="395" hits="8" branch="false"/>
-								<line number="397" hits="8" branch="true" condition-coverage="100% (2/2)">
+								<line number="441" hits="0" branch="false"/>
+								<line number="444" hits="8" branch="false"/>
+								<line number="445" hits="8" branch="false"/>
+								<line number="447" hits="8" branch="true" condition-coverage="100% (2/2)">
 									<conditions>
 										<condition number="0" type="jump" coverage="100%"/>
 									</conditions>
 								</line>
-								<line number="398" hits="32" branch="false"/>
-								<line number="399" hits="32" branch="false"/>
-								<line number="400" hits="32" branch="false"/>
-								<line number="401" hits="32" branch="false"/>
-								<line number="403" hits="8" branch="false"/>
+								<line number="448" hits="32" branch="false"/>
+								<line number="449" hits="32" branch="false"/>
+								<line number="450" hits="32" branch="false"/>
+								<line number="451" hits="32" branch="false"/>
+								<line number="453" hits="8" branch="false"/>
 							</lines>
 						</method>
 						<method name="translateIfPossible" signature="(Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;" line-rate="1.0" branch-rate="0.5">
 							<lines>
-								<line number="884" hits="1" branch="false"/>
-								<line number="885" hits="1" branch="true" condition-coverage="50% (1/2)">
+								<line number="954" hits="1" branch="false"/>
+								<line number="955" hits="1" branch="true" condition-coverage="50% (1/2)">
 									<conditions>
 										<condition number="0" type="jump" coverage="50%"/>
 									</conditions>
 								</line>
 							</lines>
 						</method>
-						<method name="truncate" signature="(Ljava/lang/String;)Lorg/springdata/cassandra/cql/core/UpdateOperation;" line-rate="1.0" branch-rate="1.0">
+						<method name="truncate" signature="(Ljava/lang/String;)Lcom/datastax/driver/core/ResultSet;" line-rate="0.0" branch-rate="1.0">
 							<lines>
-								<line number="856" hits="1" branch="false"/>
-								<line number="857" hits="1" branch="false"/>
+								<line number="921" hits="0" branch="false"/>
 							</lines>
 						</method>
-						<method name="update" signature="(Lcom/datastax/driver/core/BoundStatement;)Lorg/springdata/cassandra/cql/core/UpdateOperation;" line-rate="0.0" branch-rate="1.0">
+						<method name="update" signature="(Lcom/datastax/driver/core/BoundStatement;)Lcom/datastax/driver/core/ResultSet;" line-rate="0.0" branch-rate="1.0">
 							<lines>
-								<line number="178" hits="0" branch="false"/>
-								<line number="179" hits="0" branch="false"/>
+								<line number="188" hits="0" branch="false"/>
 							</lines>
 						</method>
-						<method name="update" signature="(Lcom/datastax/driver/core/PreparedStatement;Lorg/springdata/cassandra/cql/core/PreparedStatementBinder;)Lorg/springdata/cassandra/cql/core/UpdateOperation;" line-rate="0.0" branch-rate="1.0">
+						<method name="update" signature="(Lcom/datastax/driver/core/PreparedStatement;Lorg/springdata/cassandra/cql/core/PreparedStatementBinder;)Lcom/datastax/driver/core/ResultSet;" line-rate="0.0" branch-rate="1.0">
 							<lines>
-								<line number="172" hits="0" branch="false"/>
-								<line number="173" hits="0" branch="false"/>
+								<line number="177" hits="0" branch="false"/>
 							</lines>
 						</method>
-						<method name="update" signature="(Ljava/lang/String;)Lorg/springdata/cassandra/cql/core/UpdateOperation;" line-rate="1.0" branch-rate="1.0">
+						<method name="update" signature="(Ljava/lang/String;)Lcom/datastax/driver/core/ResultSet;" line-rate="0.0" branch-rate="1.0">
 							<lines>
-								<line number="166" hits="1" branch="false"/>
-								<line number="167" hits="1" branch="false"/>
+								<line number="166" hits="0" branch="false"/>
 							</lines>
 						</method>
-						<method name="update" signature="(Lorg/springdata/cassandra/cql/core/QueryCreator;)Lorg/springdata/cassandra/cql/core/UpdateOperation;" line-rate="1.0" branch-rate="1.0">
+						<method name="update" signature="(Lorg/springdata/cassandra/cql/core/QueryCreator;)Lcom/datastax/driver/core/ResultSet;" line-rate="0.0" branch-rate="1.0">
 							<lines>
-								<line number="191" hits="1" branch="false"/>
-								<line number="192" hits="1" branch="false"/>
+								<line number="206" hits="0" branch="false"/>
 							</lines>
 						</method>
 					</methods>
@@ -2785,194 +2854,208 @@
 						<line number="155" hits="7" branch="false"/>
 						<line number="160" hits="1" branch="false"/>
 						<line number="161" hits="1" branch="false"/>
-						<line number="166" hits="1" branch="false"/>
-						<line number="167" hits="1" branch="false"/>
-						<line number="172" hits="0" branch="false"/>
-						<line number="173" hits="0" branch="false"/>
-						<line number="178" hits="0" branch="false"/>
-						<line number="179" hits="0" branch="false"/>
-						<line number="191" hits="1" branch="false"/>
-						<line number="192" hits="1" branch="false"/>
-						<line number="197" hits="0" branch="false"/>
-						<line number="199" hits="0" branch="false"/>
-						<line number="209" hits="0" branch="false"/>
-						<line number="221" hits="0" branch="false"/>
-						<line number="223" hits="0" branch="false"/>
-						<line number="254" hits="12" branch="false"/>
-						<line number="255" hits="12" branch="false"/>
-						<line number="256" hits="12" branch="false"/>
-						<line number="261" hits="31" branch="false"/>
-						<line number="262" hits="31" branch="false"/>
-						<line number="263" hits="31" branch="false"/>
-						<line number="268" hits="4" branch="false"/>
-						<line number="269" hits="4" branch="false"/>
-						<line number="274" hits="12" branch="false"/>
-						<line number="275" hits="12" branch="false"/>
-						<line number="276" hits="12" branch="false"/>
-						<line number="289" hits="19" branch="false"/>
-						<line number="291" hits="0" branch="false"/>
-						<line number="292" hits="0" branch="false"/>
-						<line number="306" hits="142" branch="false"/>
+						<line number="166" hits="0" branch="false"/>
+						<line number="171" hits="1" branch="false"/>
+						<line number="172" hits="1" branch="false"/>
+						<line number="177" hits="0" branch="false"/>
+						<line number="182" hits="0" branch="false"/>
+						<line number="183" hits="0" branch="false"/>
+						<line number="188" hits="0" branch="false"/>
+						<line number="193" hits="0" branch="false"/>
+						<line number="194" hits="0" branch="false"/>
+						<line number="206" hits="0" branch="false"/>
+						<line number="211" hits="1" branch="false"/>
+						<line number="212" hits="1" branch="false"/>
+						<line number="217" hits="0" branch="false"/>
+						<line number="222" hits="0" branch="false"/>
+						<line number="224" hits="0" branch="false"/>
+						<line number="234" hits="0" branch="false"/>
+						<line number="246" hits="0" branch="false"/>
+						<line number="251" hits="0" branch="false"/>
+						<line number="253" hits="0" branch="false"/>
+						<line number="284" hits="0" branch="false"/>
+						<line number="289" hits="12" branch="false"/>
+						<line number="290" hits="12" branch="false"/>
+						<line number="291" hits="12" branch="false"/>
+						<line number="296" hits="0" branch="false"/>
+						<line number="301" hits="31" branch="false"/>
+						<line number="302" hits="31" branch="false"/>
+						<line number="303" hits="31" branch="false"/>
 						<line number="308" hits="0" branch="false"/>
-						<line number="309" hits="0" branch="false"/>
-						<line number="321" hits="56" branch="true" condition-coverage="50% (1/2)">
-							<conditions>
-								<condition number="0" type="jump" coverage="50%"/>
-							</conditions>
-						</line>
-						<line number="322" hits="0" branch="false"/>
-						<line number="327" hits="56" branch="false"/>
-						<line number="329" hits="0" branch="false"/>
-						<line number="330" hits="0" branch="false"/>
-						<line number="331" hits="0" branch="true" condition-coverage="0% (0/2)">
-							<conditions>
-								<condition number="0" type="jump" coverage="0%"/>
-							</conditions>
-						</line>
-						<line number="332" hits="0" branch="false"/>
-						<line number="334" hits="0" branch="false"/>
-						<line number="347" hits="52" branch="true" condition-coverage="50% (1/2)">
-							<conditions>
-								<condition number="0" type="jump" coverage="50%"/>
-							</conditions>
-						</line>
-						<line number="348" hits="0" branch="false"/>
-						<line number="353" hits="52" branch="false"/>
-						<line number="355" hits="0" branch="false"/>
-						<line number="356" hits="0" branch="false"/>
-						<line number="357" hits="0" branch="true" condition-coverage="0% (0/2)">
-							<conditions>
-								<condition number="0" type="jump" coverage="0%"/>
-							</conditions>
-						</line>
+						<line number="313" hits="4" branch="false"/>
+						<line number="314" hits="4" branch="false"/>
+						<line number="319" hits="0" branch="false"/>
+						<line number="324" hits="12" branch="false"/>
+						<line number="325" hits="12" branch="false"/>
+						<line number="326" hits="12" branch="false"/>
+						<line number="339" hits="19" branch="false"/>
+						<line number="341" hits="0" branch="false"/>
+						<line number="342" hits="0" branch="false"/>
+						<line number="356" hits="142" branch="false"/>
 						<line number="358" hits="0" branch="false"/>
-						<line number="360" hits="0" branch="false"/>
-						<line number="372" hits="10" branch="true" condition-coverage="50% (1/2)">
+						<line number="359" hits="0" branch="false"/>
+						<line number="371" hits="56" branch="true" condition-coverage="50% (1/2)">
 							<conditions>
 								<condition number="0" type="jump" coverage="50%"/>
 							</conditions>
 						</line>
-						<line number="373" hits="0" branch="false"/>
-						<line number="376" hits="10" branch="false"/>
-						<line number="377" hits="10" branch="true" condition-coverage="50% (1/2)">
+						<line number="372" hits="0" branch="false"/>
+						<line number="377" hits="56" branch="false"/>
+						<line number="379" hits="0" branch="false"/>
+						<line number="380" hits="0" branch="false"/>
+						<line number="381" hits="0" branch="true" condition-coverage="0% (0/2)">
+							<conditions>
+								<condition number="0" type="jump" coverage="0%"/>
+							</conditions>
+						</line>
+						<line number="382" hits="0" branch="false"/>
+						<line number="384" hits="0" branch="false"/>
+						<line number="397" hits="52" branch="true" condition-coverage="50% (1/2)">
 							<conditions>
 								<condition number="0" type="jump" coverage="50%"/>
 							</conditions>
 						</line>
-						<line number="378" hits="0" branch="false"/>
-						<line number="380" hits="10" branch="false"/>
-						<line number="390" hits="8" branch="true" condition-coverage="50% (1/2)">
+						<line number="398" hits="0" branch="false"/>
+						<line number="403" hits="52" branch="false"/>
+						<line number="405" hits="0" branch="false"/>
+						<line number="406" hits="0" branch="false"/>
+						<line number="407" hits="0" branch="true" condition-coverage="0% (0/2)">
+							<conditions>
+								<condition number="0" type="jump" coverage="0%"/>
+							</conditions>
+						</line>
+						<line number="408" hits="0" branch="false"/>
+						<line number="410" hits="0" branch="false"/>
+						<line number="422" hits="10" branch="true" condition-coverage="50% (1/2)">
 							<conditions>
 								<condition number="0" type="jump" coverage="50%"/>
 							</conditions>
 						</line>
-						<line number="391" hits="0" branch="false"/>
-						<line number="394" hits="8" branch="false"/>
-						<line number="395" hits="8" branch="false"/>
-						<line number="397" hits="8" branch="true" condition-coverage="100% (2/2)">
+						<line number="423" hits="0" branch="false"/>
+						<line number="426" hits="10" branch="false"/>
+						<line number="427" hits="10" branch="true" condition-coverage="50% (1/2)">
+							<conditions>
+								<condition number="0" type="jump" coverage="50%"/>
+							</conditions>
+						</line>
+						<line number="428" hits="0" branch="false"/>
+						<line number="430" hits="10" branch="false"/>
+						<line number="440" hits="8" branch="true" condition-coverage="50% (1/2)">
+							<conditions>
+								<condition number="0" type="jump" coverage="50%"/>
+							</conditions>
+						</line>
+						<line number="441" hits="0" branch="false"/>
+						<line number="444" hits="8" branch="false"/>
+						<line number="445" hits="8" branch="false"/>
+						<line number="447" hits="8" branch="true" condition-coverage="100% (2/2)">
 							<conditions>
 								<condition number="0" type="jump" coverage="100%"/>
 							</conditions>
 						</line>
-						<line number="398" hits="32" branch="false"/>
-						<line number="399" hits="32" branch="false"/>
-						<line number="400" hits="32" branch="false"/>
-						<line number="401" hits="32" branch="false"/>
-						<line number="403" hits="8" branch="false"/>
-						<line number="408" hits="1" branch="false"/>
-						<line number="421" hits="2" branch="false"/>
-						<line number="433" hits="2" branch="false"/>
-						<line number="435" hits="2" branch="false"/>
-						<line number="449" hits="58" branch="false"/>
-						<line number="451" hits="1" branch="false"/>
-						<line number="452" hits="1" branch="false"/>
-						<line number="458" hits="2" branch="false"/>
-						<line number="460" hits="2" branch="false"/>
-						<line number="462" hits="2" branch="false"/>
-						<line number="463" hits="2" branch="true" condition-coverage="100% (2/2)">
+						<line number="448" hits="32" branch="false"/>
+						<line number="449" hits="32" branch="false"/>
+						<line number="450" hits="32" branch="false"/>
+						<line number="451" hits="32" branch="false"/>
+						<line number="453" hits="8" branch="false"/>
+						<line number="458" hits="1" branch="false"/>
+						<line number="471" hits="2" branch="false"/>
+						<line number="483" hits="2" branch="false"/>
+						<line number="485" hits="2" branch="false"/>
+						<line number="499" hits="58" branch="false"/>
+						<line number="501" hits="1" branch="false"/>
+						<line number="502" hits="1" branch="false"/>
+						<line number="508" hits="2" branch="false"/>
+						<line number="510" hits="2" branch="false"/>
+						<line number="512" hits="2" branch="false"/>
+						<line number="513" hits="2" branch="true" condition-coverage="100% (2/2)">
 							<conditions>
 								<condition number="0" type="jump" coverage="100%"/>
 							</conditions>
 						</line>
-						<line number="464" hits="2" branch="false"/>
-						<line number="465" hits="2" branch="false"/>
-						<line number="466" hits="2" branch="false"/>
-						<line number="468" hits="2" branch="false"/>
-						<line number="473" hits="5" branch="false"/>
-						<line number="474" hits="5" branch="false"/>
-						<line number="476" hits="5" branch="false"/>
-						<line number="489" hits="5" branch="false"/>
-						<line number="493" hits="5" branch="false"/>
-						<line number="494" hits="5" branch="false"/>
-						<line number="496" hits="5" branch="false"/>
-						<line number="519" hits="3" branch="false"/>
-						<line number="520" hits="3" branch="false"/>
-						<line number="522" hits="3" branch="false"/>
-						<line number="548" hits="4" branch="false"/>
-						<line number="549" hits="4" branch="false"/>
-						<line number="551" hits="4" branch="false"/>
-						<line number="577" hits="2" branch="false"/>
-						<line number="579" hits="2" branch="false"/>
-						<line number="606" hits="2" branch="false"/>
-						<line number="607" hits="2" branch="false"/>
-						<line number="609" hits="2" branch="false"/>
-						<line number="630" hits="2" branch="false"/>
-						<line number="632" hits="2" branch="false"/>
-						<line number="654" hits="48" branch="false"/>
-						<line number="655" hits="48" branch="false"/>
-						<line number="660" hits="7" branch="false"/>
-						<line number="661" hits="7" branch="false"/>
-						<line number="676" hits="55" branch="false"/>
-						<line number="701" hits="2" branch="false"/>
-						<line number="714" hits="2" branch="false"/>
-						<line number="715" hits="2" branch="false"/>
-						<line number="717" hits="2" branch="false"/>
-						<line number="731" hits="80" branch="false"/>
-						<line number="733" hits="80" branch="false"/>
-						<line number="754" hits="3" branch="false"/>
-						<line number="759" hits="4" branch="false"/>
-						<line number="765" hits="14" branch="false"/>
-						<line number="766" hits="14" branch="false"/>
-						<line number="768" hits="14" branch="false"/>
-						<line number="785" hits="14" branch="false"/>
-						<line number="792" hits="13" branch="false"/>
-						<line number="793" hits="13" branch="false"/>
-						<line number="794" hits="13" branch="false"/>
-						<line number="796" hits="13" branch="false"/>
-						<line number="798" hits="13" branch="false"/>
-						<line number="841" hits="0" branch="false"/>
-						<line number="843" hits="0" branch="false"/>
-						<line number="856" hits="1" branch="false"/>
-						<line number="857" hits="1" branch="false"/>
-						<line number="869" hits="2" branch="false"/>
-						<line number="874" hits="0" branch="false"/>
-						<line number="884" hits="1" branch="false"/>
-						<line number="885" hits="1" branch="true" condition-coverage="50% (1/2)">
+						<line number="514" hits="2" branch="false"/>
+						<line number="515" hits="2" branch="false"/>
+						<line number="516" hits="2" branch="false"/>
+						<line number="518" hits="2" branch="false"/>
+						<line number="523" hits="5" branch="false"/>
+						<line number="524" hits="5" branch="false"/>
+						<line number="526" hits="5" branch="false"/>
+						<line number="539" hits="5" branch="false"/>
+						<line number="543" hits="5" branch="false"/>
+						<line number="544" hits="5" branch="false"/>
+						<line number="546" hits="5" branch="false"/>
+						<line number="569" hits="3" branch="false"/>
+						<line number="570" hits="3" branch="false"/>
+						<line number="572" hits="3" branch="false"/>
+						<line number="598" hits="4" branch="false"/>
+						<line number="599" hits="4" branch="false"/>
+						<line number="601" hits="4" branch="false"/>
+						<line number="627" hits="2" branch="false"/>
+						<line number="629" hits="2" branch="false"/>
+						<line number="656" hits="2" branch="false"/>
+						<line number="657" hits="2" branch="false"/>
+						<line number="659" hits="2" branch="false"/>
+						<line number="680" hits="2" branch="false"/>
+						<line number="682" hits="2" branch="false"/>
+						<line number="704" hits="48" branch="false"/>
+						<line number="705" hits="48" branch="false"/>
+						<line number="710" hits="7" branch="false"/>
+						<line number="711" hits="7" branch="false"/>
+						<line number="726" hits="55" branch="false"/>
+						<line number="751" hits="2" branch="false"/>
+						<line number="764" hits="2" branch="false"/>
+						<line number="765" hits="2" branch="false"/>
+						<line number="767" hits="2" branch="false"/>
+						<line number="781" hits="80" branch="false"/>
+						<line number="783" hits="80" branch="false"/>
+						<line number="804" hits="3" branch="false"/>
+						<line number="809" hits="4" branch="false"/>
+						<line number="814" hits="0" branch="false"/>
+						<line number="820" hits="14" branch="false"/>
+						<line number="821" hits="14" branch="false"/>
+						<line number="823" hits="14" branch="false"/>
+						<line number="840" hits="14" branch="false"/>
+						<line number="846" hits="0" branch="false"/>
+						<line number="852" hits="13" branch="false"/>
+						<line number="853" hits="13" branch="false"/>
+						<line number="854" hits="13" branch="false"/>
+						<line number="856" hits="13" branch="false"/>
+						<line number="858" hits="13" branch="false"/>
+						<line number="901" hits="0" branch="false"/>
+						<line number="906" hits="0" branch="false"/>
+						<line number="908" hits="0" branch="false"/>
+						<line number="921" hits="0" branch="false"/>
+						<line number="926" hits="1" branch="false"/>
+						<line number="927" hits="1" branch="false"/>
+						<line number="939" hits="2" branch="false"/>
+						<line number="944" hits="0" branch="false"/>
+						<line number="954" hits="1" branch="false"/>
+						<line number="955" hits="1" branch="true" condition-coverage="50% (1/2)">
 							<conditions>
 								<condition number="0" type="jump" coverage="50%"/>
 							</conditions>
 						</line>
 					</lines>
 				</class>
-				<class name="org.springdata.cassandra.cql.core.CqlTemplate$1" filename="org/springdata/cassandra/cql/core/CqlTemplate.java" line-rate="0.0" branch-rate="1.0" complexity="1.736842105263158">
+				<class name="org.springdata.cassandra.cql.core.CqlTemplate$1" filename="org/springdata/cassandra/cql/core/CqlTemplate.java" line-rate="0.0" branch-rate="1.0" complexity="1.6222222222222222">
 					<methods>
 						<method name="&lt;init&gt;" signature="(Lorg/springdata/cassandra/cql/core/CqlTemplate;Lcom/datastax/driver/core/BoundStatement;)V" line-rate="0.0" branch-rate="1.0">
 							<lines>
-								<line number="179" hits="0" branch="false"/>
+								<line number="194" hits="0" branch="false"/>
 							</lines>
 						</method>
 						<method name="createQuery" signature="()Lcom/datastax/driver/core/Query;" line-rate="0.0" branch-rate="1.0">
 							<lines>
-								<line number="183" hits="0" branch="false"/>
+								<line number="198" hits="0" branch="false"/>
 							</lines>
 						</method>
 					</methods>
 					<lines>
-						<line number="179" hits="0" branch="false"/>
-						<line number="183" hits="0" branch="false"/>
+						<line number="194" hits="0" branch="false"/>
+						<line number="198" hits="0" branch="false"/>
 					</lines>
 				</class>
-				<class name="org.springdata.cassandra.cql.core.CqlTemplate$10" filename="org/springdata/cassandra/cql/core/CqlTemplate.java" line-rate="0.75" branch-rate="0.5" complexity="1.736842105263158">
+				<class name="org.springdata.cassandra.cql.core.CqlTemplate$10" filename="org/springdata/cassandra/cql/core/CqlTemplate.java" line-rate="0.75" branch-rate="0.5" complexity="1.6222222222222222">
 					<methods>
 						<method name="&lt;init&gt;" signature="(Lorg/springdata/cassandra/cql/core/CqlTemplate;Z)V" line-rate="1.0" branch-rate="1.0">
 							<lines>
@@ -2980,51 +3063,51 @@
 						</method>
 						<method name="extractData" signature="(Lcom/datastax/driver/core/ResultSet;)Ljava/lang/Object;" line-rate="1.0" branch-rate="1.0">
 							<lines>
-								<line number="579" hits="4" branch="false"/>
+								<line number="629" hits="4" branch="false"/>
 							</lines>
 						</method>
 						<method name="extractData" signature="(Lcom/datastax/driver/core/ResultSet;)Ljava/util/Map;" line-rate="0.7142857142857143" branch-rate="0.5">
 							<lines>
-								<line number="584" hits="2" branch="false"/>
-								<line number="585" hits="2" branch="true" condition-coverage="50% (1/2)">
+								<line number="634" hits="2" branch="false"/>
+								<line number="635" hits="2" branch="true" condition-coverage="50% (1/2)">
 									<conditions>
 										<condition number="0" type="jump" coverage="50%"/>
 									</conditions>
 								</line>
-								<line number="586" hits="0" branch="false"/>
-								<line number="589" hits="2" branch="false"/>
-								<line number="591" hits="2" branch="true" condition-coverage="50% (2/4)">
+								<line number="636" hits="0" branch="false"/>
+								<line number="639" hits="2" branch="false"/>
+								<line number="641" hits="2" branch="true" condition-coverage="50% (2/4)">
 									<conditions>
 										<condition number="0" type="jump" coverage="50%"/>
 										<condition number="1" type="jump" coverage="50%"/>
 									</conditions>
 								</line>
-								<line number="592" hits="0" branch="false"/>
-								<line number="595" hits="2" branch="false"/>
+								<line number="642" hits="0" branch="false"/>
+								<line number="645" hits="2" branch="false"/>
 							</lines>
 						</method>
 					</methods>
 					<lines>
-						<line number="579" hits="4" branch="false"/>
-						<line number="584" hits="2" branch="false"/>
-						<line number="585" hits="2" branch="true" condition-coverage="50% (1/2)">
+						<line number="629" hits="4" branch="false"/>
+						<line number="634" hits="2" branch="false"/>
+						<line number="635" hits="2" branch="true" condition-coverage="50% (1/2)">
 							<conditions>
 								<condition number="0" type="jump" coverage="50%"/>
 							</conditions>
 						</line>
-						<line number="586" hits="0" branch="false"/>
-						<line number="589" hits="2" branch="false"/>
-						<line number="591" hits="2" branch="true" condition-coverage="50% (2/4)">
+						<line number="636" hits="0" branch="false"/>
+						<line number="639" hits="2" branch="false"/>
+						<line number="641" hits="2" branch="true" condition-coverage="50% (2/4)">
 							<conditions>
 								<condition number="0" type="jump" coverage="50%"/>
 								<condition number="1" type="jump" coverage="50%"/>
 							</conditions>
 						</line>
-						<line number="592" hits="0" branch="false"/>
-						<line number="595" hits="2" branch="false"/>
+						<line number="642" hits="0" branch="false"/>
+						<line number="645" hits="2" branch="false"/>
 					</lines>
 				</class>
-				<class name="org.springdata.cassandra.cql.core.CqlTemplate$11" filename="org/springdata/cassandra/cql/core/CqlTemplate.java" line-rate="1.0" branch-rate="1.0" complexity="1.736842105263158">
+				<class name="org.springdata.cassandra.cql.core.CqlTemplate$11" filename="org/springdata/cassandra/cql/core/CqlTemplate.java" line-rate="1.0" branch-rate="1.0" complexity="1.6222222222222222">
 					<methods>
 						<method name="&lt;init&gt;" signature="(Lorg/springdata/cassandra/cql/core/CqlTemplate;)V" line-rate="1.0" branch-rate="1.0">
 							<lines>
@@ -3032,39 +3115,39 @@
 						</method>
 						<method name="extractData" signature="(Lcom/datastax/driver/core/ResultSet;)Ljava/lang/Object;" line-rate="1.0" branch-rate="1.0">
 							<lines>
-								<line number="609" hits="4" branch="false"/>
+								<line number="659" hits="4" branch="false"/>
 							</lines>
 						</method>
 						<method name="extractData" signature="(Lcom/datastax/driver/core/ResultSet;)Ljava/util/List;" line-rate="1.0" branch-rate="1.0">
 							<lines>
-								<line number="614" hits="2" branch="false"/>
-								<line number="615" hits="2" branch="true" condition-coverage="100% (2/2)">
+								<line number="664" hits="2" branch="false"/>
+								<line number="665" hits="2" branch="true" condition-coverage="100% (2/2)">
 									<conditions>
 										<condition number="0" type="jump" coverage="100%"/>
 									</conditions>
 								</line>
-								<line number="616" hits="6" branch="false"/>
-								<line number="617" hits="6" branch="false"/>
-								<line number="618" hits="6" branch="false"/>
-								<line number="620" hits="2" branch="false"/>
+								<line number="666" hits="6" branch="false"/>
+								<line number="667" hits="6" branch="false"/>
+								<line number="668" hits="6" branch="false"/>
+								<line number="670" hits="2" branch="false"/>
 							</lines>
 						</method>
 					</methods>
 					<lines>
-						<line number="609" hits="4" branch="false"/>
-						<line number="614" hits="2" branch="false"/>
-						<line number="615" hits="2" branch="true" condition-coverage="100% (2/2)">
+						<line number="659" hits="4" branch="false"/>
+						<line number="664" hits="2" branch="false"/>
+						<line number="665" hits="2" branch="true" condition-coverage="100% (2/2)">
 							<conditions>
 								<condition number="0" type="jump" coverage="100%"/>
 							</conditions>
 						</line>
-						<line number="616" hits="6" branch="false"/>
-						<line number="617" hits="6" branch="false"/>
-						<line number="618" hits="6" branch="false"/>
-						<line number="620" hits="2" branch="false"/>
+						<line number="666" hits="6" branch="false"/>
+						<line number="667" hits="6" branch="false"/>
+						<line number="668" hits="6" branch="false"/>
+						<line number="670" hits="2" branch="false"/>
 					</lines>
 				</class>
-				<class name="org.springdata.cassandra.cql.core.CqlTemplate$12" filename="org/springdata/cassandra/cql/core/CqlTemplate.java" line-rate="1.0" branch-rate="1.0" complexity="1.736842105263158">
+				<class name="org.springdata.cassandra.cql.core.CqlTemplate$12" filename="org/springdata/cassandra/cql/core/CqlTemplate.java" line-rate="1.0" branch-rate="1.0" complexity="1.6222222222222222">
 					<methods>
 						<method name="&lt;init&gt;" signature="(Lorg/springdata/cassandra/cql/core/CqlTemplate;)V" line-rate="1.0" branch-rate="1.0">
 							<lines>
@@ -3072,39 +3155,39 @@
 						</method>
 						<method name="extractData" signature="(Lcom/datastax/driver/core/ResultSet;)Ljava/lang/Object;" line-rate="1.0" branch-rate="1.0">
 							<lines>
-								<line number="632" hits="4" branch="false"/>
+								<line number="682" hits="4" branch="false"/>
 							</lines>
 						</method>
 						<method name="extractData" signature="(Lcom/datastax/driver/core/ResultSet;)Ljava/util/List;" line-rate="1.0" branch-rate="1.0">
 							<lines>
-								<line number="637" hits="2" branch="false"/>
-								<line number="639" hits="2" branch="true" condition-coverage="100% (2/2)">
+								<line number="687" hits="2" branch="false"/>
+								<line number="689" hits="2" branch="true" condition-coverage="100% (2/2)">
 									<conditions>
 										<condition number="0" type="jump" coverage="100%"/>
 									</conditions>
 								</line>
-								<line number="640" hits="6" branch="false"/>
-								<line number="641" hits="6" branch="false"/>
-								<line number="642" hits="6" branch="false"/>
-								<line number="644" hits="2" branch="false"/>
+								<line number="690" hits="6" branch="false"/>
+								<line number="691" hits="6" branch="false"/>
+								<line number="692" hits="6" branch="false"/>
+								<line number="694" hits="2" branch="false"/>
 							</lines>
 						</method>
 					</methods>
 					<lines>
-						<line number="632" hits="4" branch="false"/>
-						<line number="637" hits="2" branch="false"/>
-						<line number="639" hits="2" branch="true" condition-coverage="100% (2/2)">
+						<line number="682" hits="4" branch="false"/>
+						<line number="687" hits="2" branch="false"/>
+						<line number="689" hits="2" branch="true" condition-coverage="100% (2/2)">
 							<conditions>
 								<condition number="0" type="jump" coverage="100%"/>
 							</conditions>
 						</line>
-						<line number="640" hits="6" branch="false"/>
-						<line number="641" hits="6" branch="false"/>
-						<line number="642" hits="6" branch="false"/>
-						<line number="644" hits="2" branch="false"/>
+						<line number="690" hits="6" branch="false"/>
+						<line number="691" hits="6" branch="false"/>
+						<line number="692" hits="6" branch="false"/>
+						<line number="694" hits="2" branch="false"/>
 					</lines>
 				</class>
-				<class name="org.springdata.cassandra.cql.core.CqlTemplate$13" filename="org/springdata/cassandra/cql/core/CqlTemplate.java" line-rate="1.0" branch-rate="1.0" complexity="1.736842105263158">
+				<class name="org.springdata.cassandra.cql.core.CqlTemplate$13" filename="org/springdata/cassandra/cql/core/CqlTemplate.java" line-rate="1.0" branch-rate="1.0" complexity="1.6222222222222222">
 					<methods>
 						<method name="&lt;init&gt;" signature="(Lorg/springdata/cassandra/cql/core/CqlTemplate;Lorg/springdata/cassandra/cql/core/PreparedStatementCreator;)V" line-rate="1.0" branch-rate="1.0">
 							<lines>
@@ -3112,41 +3195,41 @@
 						</method>
 						<method name="doInSession" signature="(Lcom/datastax/driver/core/Session;)Lcom/datastax/driver/core/PreparedStatement;" line-rate="1.0" branch-rate="1.0">
 							<lines>
-								<line number="681" hits="55" branch="false"/>
-								<line number="683" hits="55" branch="false"/>
+								<line number="731" hits="55" branch="false"/>
+								<line number="733" hits="55" branch="false"/>
 							</lines>
 						</method>
 						<method name="doInSession" signature="(Lcom/datastax/driver/core/Session;)Ljava/lang/Object;" line-rate="1.0" branch-rate="1.0">
 							<lines>
-								<line number="676" hits="110" branch="false"/>
+								<line number="726" hits="110" branch="false"/>
 							</lines>
 						</method>
 					</methods>
 					<lines>
-						<line number="676" hits="110" branch="false"/>
-						<line number="681" hits="55" branch="false"/>
-						<line number="683" hits="55" branch="false"/>
+						<line number="726" hits="110" branch="false"/>
+						<line number="731" hits="55" branch="false"/>
+						<line number="733" hits="55" branch="false"/>
 					</lines>
 				</class>
-				<class name="org.springdata.cassandra.cql.core.CqlTemplate$14" filename="org/springdata/cassandra/cql/core/CqlTemplate.java" line-rate="1.0" branch-rate="1.0" complexity="1.736842105263158">
+				<class name="org.springdata.cassandra.cql.core.CqlTemplate$14" filename="org/springdata/cassandra/cql/core/CqlTemplate.java" line-rate="1.0" branch-rate="1.0" complexity="1.6222222222222222">
 					<methods>
 						<method name="&lt;init&gt;" signature="(Lorg/springdata/cassandra/cql/core/CqlTemplate;Lorg/springdata/cassandra/cql/core/PreparedStatementCallback;Lcom/datastax/driver/core/PreparedStatement;)V" line-rate="1.0" branch-rate="1.0">
 							<lines>
-								<line number="701" hits="2" branch="false"/>
+								<line number="751" hits="2" branch="false"/>
 							</lines>
 						</method>
 						<method name="doInSession" signature="(Lcom/datastax/driver/core/Session;)Ljava/lang/Object;" line-rate="1.0" branch-rate="1.0">
 							<lines>
-								<line number="705" hits="2" branch="false"/>
+								<line number="755" hits="2" branch="false"/>
 							</lines>
 						</method>
 					</methods>
 					<lines>
-						<line number="701" hits="2" branch="false"/>
-						<line number="705" hits="2" branch="false"/>
+						<line number="751" hits="2" branch="false"/>
+						<line number="755" hits="2" branch="false"/>
 					</lines>
 				</class>
-				<class name="org.springdata.cassandra.cql.core.CqlTemplate$15" filename="org/springdata/cassandra/cql/core/CqlTemplate.java" line-rate="1.0" branch-rate="1.0" complexity="1.736842105263158">
+				<class name="org.springdata.cassandra.cql.core.CqlTemplate$15" filename="org/springdata/cassandra/cql/core/CqlTemplate.java" line-rate="1.0" branch-rate="1.0" complexity="1.6222222222222222">
 					<methods>
 						<method name="&lt;init&gt;" signature="(Lorg/springdata/cassandra/cql/core/CqlTemplate;Lorg/springdata/cassandra/cql/core/PreparedStatementBinder;Lcom/datastax/driver/core/PreparedStatement;)V" line-rate="1.0" branch-rate="1.0">
 							<lines>
@@ -3154,37 +3237,37 @@
 						</method>
 						<method name="doInSession" signature="(Lcom/datastax/driver/core/Session;)Lcom/datastax/driver/core/BoundStatement;" line-rate="1.0" branch-rate="1.0">
 							<lines>
-								<line number="738" hits="80" branch="false"/>
-								<line number="739" hits="80" branch="true" condition-coverage="100% (2/2)">
+								<line number="788" hits="80" branch="false"/>
+								<line number="789" hits="80" branch="true" condition-coverage="100% (2/2)">
 									<conditions>
 										<condition number="0" type="jump" coverage="100%"/>
 									</conditions>
 								</line>
-								<line number="740" hits="77" branch="false"/>
-								<line number="742" hits="3" branch="false"/>
-								<line number="745" hits="80" branch="false"/>
+								<line number="790" hits="77" branch="false"/>
+								<line number="792" hits="3" branch="false"/>
+								<line number="795" hits="80" branch="false"/>
 							</lines>
 						</method>
 						<method name="doInSession" signature="(Lcom/datastax/driver/core/Session;)Ljava/lang/Object;" line-rate="1.0" branch-rate="1.0">
 							<lines>
-								<line number="733" hits="160" branch="false"/>
+								<line number="783" hits="160" branch="false"/>
 							</lines>
 						</method>
 					</methods>
 					<lines>
-						<line number="733" hits="160" branch="false"/>
-						<line number="738" hits="80" branch="false"/>
-						<line number="739" hits="80" branch="true" condition-coverage="100% (2/2)">
+						<line number="783" hits="160" branch="false"/>
+						<line number="788" hits="80" branch="false"/>
+						<line number="789" hits="80" branch="true" condition-coverage="100% (2/2)">
 							<conditions>
 								<condition number="0" type="jump" coverage="100%"/>
 							</conditions>
 						</line>
-						<line number="740" hits="77" branch="false"/>
-						<line number="742" hits="3" branch="false"/>
-						<line number="745" hits="80" branch="false"/>
+						<line number="790" hits="77" branch="false"/>
+						<line number="792" hits="3" branch="false"/>
+						<line number="795" hits="80" branch="false"/>
 					</lines>
 				</class>
-				<class name="org.springdata.cassandra.cql.core.CqlTemplate$16" filename="org/springdata/cassandra/cql/core/CqlTemplate.java" line-rate="1.0" branch-rate="1.0" complexity="1.736842105263158">
+				<class name="org.springdata.cassandra.cql.core.CqlTemplate$16" filename="org/springdata/cassandra/cql/core/CqlTemplate.java" line-rate="1.0" branch-rate="1.0" complexity="1.6222222222222222">
 					<methods>
 						<method name="&lt;init&gt;" signature="(Lorg/springdata/cassandra/cql/core/CqlTemplate;Lcom/datastax/driver/core/PreparedStatement;)V" line-rate="1.0" branch-rate="1.0">
 							<lines>
@@ -3192,97 +3275,97 @@
 						</method>
 						<method name="apply" signature="(Ljava/lang/Object;)Ljava/lang/Object;" line-rate="1.0" branch-rate="1.0">
 							<lines>
-								<line number="768" hits="56" branch="false"/>
+								<line number="823" hits="56" branch="false"/>
 							</lines>
 						</method>
 						<method name="apply" signature="([Ljava/lang/Object;)Lcom/datastax/driver/core/Query;" line-rate="1.0" branch-rate="1.0">
 							<lines>
-								<line number="773" hits="42" branch="false"/>
-								<line number="781" hits="42" branch="false"/>
+								<line number="828" hits="42" branch="false"/>
+								<line number="836" hits="42" branch="false"/>
 							</lines>
 						</method>
 					</methods>
 					<lines>
-						<line number="768" hits="56" branch="false"/>
-						<line number="773" hits="42" branch="false"/>
-						<line number="781" hits="42" branch="false"/>
+						<line number="823" hits="56" branch="false"/>
+						<line number="828" hits="42" branch="false"/>
+						<line number="836" hits="42" branch="false"/>
 					</lines>
 				</class>
-				<class name="org.springdata.cassandra.cql.core.CqlTemplate$16$1" filename="org/springdata/cassandra/cql/core/CqlTemplate.java" line-rate="1.0" branch-rate="1.0" complexity="1.736842105263158">
+				<class name="org.springdata.cassandra.cql.core.CqlTemplate$16$1" filename="org/springdata/cassandra/cql/core/CqlTemplate.java" line-rate="1.0" branch-rate="1.0" complexity="1.6222222222222222">
 					<methods>
 						<method name="&lt;init&gt;" signature="(Lorg/springdata/cassandra/cql/core/CqlTemplate$16;[Ljava/lang/Object;)V" line-rate="1.0" branch-rate="1.0">
 							<lines>
-								<line number="773" hits="42" branch="false"/>
+								<line number="828" hits="42" branch="false"/>
 							</lines>
 						</method>
 						<method name="bindValues" signature="(Lcom/datastax/driver/core/PreparedStatement;)Lcom/datastax/driver/core/BoundStatement;" line-rate="1.0" branch-rate="1.0">
 							<lines>
-								<line number="777" hits="42" branch="false"/>
+								<line number="832" hits="42" branch="false"/>
 							</lines>
 						</method>
 					</methods>
 					<lines>
-						<line number="773" hits="42" branch="false"/>
-						<line number="777" hits="42" branch="false"/>
+						<line number="828" hits="42" branch="false"/>
+						<line number="832" hits="42" branch="false"/>
 					</lines>
 				</class>
-				<class name="org.springdata.cassandra.cql.core.CqlTemplate$17" filename="org/springdata/cassandra/cql/core/CqlTemplate.java" line-rate="1.0" branch-rate="1.0" complexity="1.736842105263158">
+				<class name="org.springdata.cassandra.cql.core.CqlTemplate$17" filename="org/springdata/cassandra/cql/core/CqlTemplate.java" line-rate="1.0" branch-rate="1.0" complexity="1.6222222222222222">
 					<methods>
 						<method name="&lt;init&gt;" signature="(Lorg/springdata/cassandra/cql/core/CqlTemplate;Ljava/util/Iterator;)V" line-rate="1.0" branch-rate="1.0">
 							<lines>
-								<line number="798" hits="13" branch="false"/>
+								<line number="858" hits="13" branch="false"/>
 							</lines>
 						</method>
 						<method name="iterator" signature="()Ljava/util/Iterator;" line-rate="1.0" branch-rate="1.0">
 							<lines>
-								<line number="802" hits="13" branch="false"/>
+								<line number="862" hits="13" branch="false"/>
 							</lines>
 						</method>
 					</methods>
 					<lines>
-						<line number="798" hits="13" branch="false"/>
-						<line number="802" hits="13" branch="false"/>
+						<line number="858" hits="13" branch="false"/>
+						<line number="862" hits="13" branch="false"/>
 					</lines>
 				</class>
-				<class name="org.springdata.cassandra.cql.core.CqlTemplate$18" filename="org/springdata/cassandra/cql/core/CqlTemplate.java" line-rate="0.0" branch-rate="1.0" complexity="1.736842105263158">
+				<class name="org.springdata.cassandra.cql.core.CqlTemplate$18" filename="org/springdata/cassandra/cql/core/CqlTemplate.java" line-rate="0.0" branch-rate="1.0" complexity="1.6222222222222222">
 					<methods>
 						<method name="&lt;init&gt;" signature="(Lorg/springdata/cassandra/cql/core/CqlTemplate;Ljava/lang/String;)V" line-rate="0.0" branch-rate="1.0">
 							<lines>
-								<line number="843" hits="0" branch="false"/>
+								<line number="908" hits="0" branch="false"/>
 							</lines>
 						</method>
 						<method name="createQuery" signature="()Lcom/datastax/driver/core/Query;" line-rate="0.0" branch-rate="1.0">
 							<lines>
-								<line number="847" hits="0" branch="false"/>
-								<line number="848" hits="0" branch="false"/>
+								<line number="912" hits="0" branch="false"/>
+								<line number="913" hits="0" branch="false"/>
 							</lines>
 						</method>
 					</methods>
 					<lines>
-						<line number="843" hits="0" branch="false"/>
-						<line number="847" hits="0" branch="false"/>
-						<line number="848" hits="0" branch="false"/>
+						<line number="908" hits="0" branch="false"/>
+						<line number="912" hits="0" branch="false"/>
+						<line number="913" hits="0" branch="false"/>
 					</lines>
 				</class>
-				<class name="org.springdata.cassandra.cql.core.CqlTemplate$19" filename="org/springdata/cassandra/cql/core/CqlTemplate.java" line-rate="1.0" branch-rate="1.0" complexity="1.736842105263158">
+				<class name="org.springdata.cassandra.cql.core.CqlTemplate$19" filename="org/springdata/cassandra/cql/core/CqlTemplate.java" line-rate="1.0" branch-rate="1.0" complexity="1.6222222222222222">
 					<methods>
 						<method name="&lt;init&gt;" signature="(Lorg/springdata/cassandra/cql/core/CqlTemplate;Ljava/lang/String;)V" line-rate="1.0" branch-rate="1.0">
 							<lines>
-								<line number="857" hits="1" branch="false"/>
+								<line number="927" hits="1" branch="false"/>
 							</lines>
 						</method>
 						<method name="createQuery" signature="()Lcom/datastax/driver/core/Query;" line-rate="1.0" branch-rate="1.0">
 							<lines>
-								<line number="861" hits="1" branch="false"/>
+								<line number="931" hits="1" branch="false"/>
 							</lines>
 						</method>
 					</methods>
 					<lines>
-						<line number="857" hits="1" branch="false"/>
-						<line number="861" hits="1" branch="false"/>
+						<line number="927" hits="1" branch="false"/>
+						<line number="931" hits="1" branch="false"/>
 					</lines>
 				</class>
-				<class name="org.springdata.cassandra.cql.core.CqlTemplate$2" filename="org/springdata/cassandra/cql/core/CqlTemplate.java" line-rate="0.0" branch-rate="1.0" complexity="1.736842105263158">
+				<class name="org.springdata.cassandra.cql.core.CqlTemplate$2" filename="org/springdata/cassandra/cql/core/CqlTemplate.java" line-rate="0.0" branch-rate="1.0" complexity="1.6222222222222222">
 					<methods>
 						<method name="&lt;init&gt;" signature="(Lorg/springdata/cassandra/cql/core/CqlTemplate;)V" line-rate="1.0" branch-rate="1.0">
 							<lines>
@@ -3290,91 +3373,91 @@
 						</method>
 						<method name="apply" signature="(Ljava/lang/Object;)Ljava/lang/Object;" line-rate="0.0" branch-rate="1.0">
 							<lines>
-								<line number="200" hits="0" branch="false"/>
+								<line number="225" hits="0" branch="false"/>
 							</lines>
 						</method>
 						<method name="apply" signature="(Ljava/lang/String;)Lcom/datastax/driver/core/Statement;" line-rate="0.0" branch-rate="1.0">
 							<lines>
-								<line number="204" hits="0" branch="false"/>
+								<line number="229" hits="0" branch="false"/>
 							</lines>
 						</method>
 					</methods>
 					<lines>
-						<line number="200" hits="0" branch="false"/>
-						<line number="204" hits="0" branch="false"/>
+						<line number="225" hits="0" branch="false"/>
+						<line number="229" hits="0" branch="false"/>
 					</lines>
 				</class>
-				<class name="org.springdata.cassandra.cql.core.CqlTemplate$3" filename="org/springdata/cassandra/cql/core/CqlTemplate.java" line-rate="0.0" branch-rate="1.0" complexity="1.736842105263158">
+				<class name="org.springdata.cassandra.cql.core.CqlTemplate$3" filename="org/springdata/cassandra/cql/core/CqlTemplate.java" line-rate="0.0" branch-rate="1.0" complexity="1.6222222222222222">
 					<methods>
 						<method name="&lt;init&gt;" signature="(Lorg/springdata/cassandra/cql/core/CqlTemplate;Ljava/util/Iterator;)V" line-rate="0.0" branch-rate="1.0">
 							<lines>
-								<line number="209" hits="0" branch="false"/>
+								<line number="234" hits="0" branch="false"/>
 							</lines>
 						</method>
 						<method name="iterator" signature="()Ljava/util/Iterator;" line-rate="0.0" branch-rate="1.0">
 							<lines>
-								<line number="213" hits="0" branch="false"/>
+								<line number="238" hits="0" branch="false"/>
 							</lines>
 						</method>
 					</methods>
 					<lines>
-						<line number="209" hits="0" branch="false"/>
-						<line number="213" hits="0" branch="false"/>
+						<line number="234" hits="0" branch="false"/>
+						<line number="238" hits="0" branch="false"/>
 					</lines>
 				</class>
-				<class name="org.springdata.cassandra.cql.core.CqlTemplate$4" filename="org/springdata/cassandra/cql/core/CqlTemplate.java" line-rate="0.0" branch-rate="0.0" complexity="1.736842105263158">
+				<class name="org.springdata.cassandra.cql.core.CqlTemplate$4" filename="org/springdata/cassandra/cql/core/CqlTemplate.java" line-rate="0.0" branch-rate="0.0" complexity="1.6222222222222222">
 					<methods>
 						<method name="&lt;init&gt;" signature="(Lorg/springdata/cassandra/cql/core/CqlTemplate;Ljava/lang/Iterable;)V" line-rate="0.0" branch-rate="1.0">
 							<lines>
-								<line number="223" hits="0" branch="false"/>
+								<line number="253" hits="0" branch="false"/>
 							</lines>
 						</method>
 						<method name="createQuery" signature="()Lcom/datastax/driver/core/Query;" line-rate="0.0" branch-rate="0.0">
 							<lines>
-								<line number="231" hits="0" branch="false"/>
-								<line number="233" hits="0" branch="false"/>
-								<line number="234" hits="0" branch="true" condition-coverage="0% (0/2)">
+								<line number="261" hits="0" branch="false"/>
+								<line number="263" hits="0" branch="false"/>
+								<line number="264" hits="0" branch="true" condition-coverage="0% (0/2)">
 									<conditions>
 										<condition number="0" type="jump" coverage="0%"/>
 									</conditions>
 								</line>
-								<line number="236" hits="0" branch="false"/>
-								<line number="238" hits="0" branch="false"/>
-								<line number="239" hits="0" branch="false"/>
-								<line number="240" hits="0" branch="false"/>
-								<line number="242" hits="0" branch="true" condition-coverage="0% (0/2)">
+								<line number="266" hits="0" branch="false"/>
+								<line number="268" hits="0" branch="false"/>
+								<line number="269" hits="0" branch="false"/>
+								<line number="270" hits="0" branch="false"/>
+								<line number="272" hits="0" branch="true" condition-coverage="0% (0/2)">
 									<conditions>
 										<condition number="0" type="jump" coverage="0%"/>
 									</conditions>
 								</line>
-								<line number="243" hits="0" branch="false"/>
-								<line number="246" hits="0" branch="false"/>
+								<line number="273" hits="0" branch="false"/>
+								<line number="276" hits="0" branch="false"/>
 							</lines>
 						</method>
 					</methods>
 					<lines>
-						<line number="223" hits="0" branch="false"/>
-						<line number="231" hits="0" branch="false"/>
-						<line number="233" hits="0" branch="false"/>
-						<line number="234" hits="0" branch="true" condition-coverage="0% (0/2)">
+						<line number="253" hits="0" branch="false"/>
+						<line number="261" hits="0" branch="false"/>
+						<line number="263" hits="0" branch="false"/>
+						<line number="264" hits="0" branch="true" condition-coverage="0% (0/2)">
 							<conditions>
 								<condition number="0" type="jump" coverage="0%"/>
 							</conditions>
 						</line>
-						<line number="236" hits="0" branch="false"/>
-						<line number="238" hits="0" branch="false"/>
-						<line number="239" hits="0" branch="false"/>
-						<line number="240" hits="0" branch="false"/>
-						<line number="242" hits="0" branch="true" condition-coverage="0% (0/2)">
+						<line number="266" hits="0" branch="false"/>
+						<line number="268" hits="0" branch="false"/>
+						<line number="269" hits="0" branch="false"/>
+						<line number="270" hits="0" branch="false"/>
+						<line number="272" hits="0" branch="true" condition-coverage="0% (0/2)">
 							<conditions>
 								<condition number="0" type="jump" coverage="0%"/>
 							</conditions>
 						</line>
-						<line number="243" hits="0" branch="false"/>
-						<line number="246" hits="0" branch="false"/>
+						<line number="273" hits="0" branch="false"/>
+						<line number="276" hits="0" branch="false"/>
 					</lines>
 				</class>
-				<class name="org.springdata.cassandra.cql.core.CqlTemplate$5" filename="org/springdata/cassandra/cql/core/CqlTemplate.java" line-rate="1.0" branch-rate="1.0" complexity="1.736842105263158">
+				<class name="org.springdata.cassandra.cql.core.CqlTemplate$5" filename="org/springdata/cassandra/cql/core/CqlTemplate.java" line-rate="1.0" branch-rate="1.0" complexity="1.6222222222222222">
 					<methods>
 						<method name="&lt;init&gt;" signature="(Lorg/springdata/cassandra/cql/core/CqlTemplate;)V" line-rate="1.0" branch-rate="1.0">
 							<lines>
@@ -3382,53 +3465,53 @@
 						</method>
 						<method name="doInSession" signature="(Lcom/datastax/driver/core/Session;)Lcom/datastax/driver/core/Metadata;" line-rate="1.0" branch-rate="1.0">
 							<lines>
-								<line number="425" hits="2" branch="false"/>
+								<line number="475" hits="2" branch="false"/>
 							</lines>
 						</method>
 						<method name="doInSession" signature="(Lcom/datastax/driver/core/Session;)Ljava/lang/Object;" line-rate="1.0" branch-rate="1.0">
 							<lines>
-								<line number="421" hits="4" branch="false"/>
+								<line number="471" hits="4" branch="false"/>
 							</lines>
 						</method>
 					</methods>
 					<lines>
-						<line number="421" hits="4" branch="false"/>
-						<line number="425" hits="2" branch="false"/>
+						<line number="471" hits="4" branch="false"/>
+						<line number="475" hits="2" branch="false"/>
 					</lines>
 				</class>
-				<class name="org.springdata.cassandra.cql.core.CqlTemplate$6" filename="org/springdata/cassandra/cql/core/CqlTemplate.java" line-rate="1.0" branch-rate="1.0" complexity="1.736842105263158">
+				<class name="org.springdata.cassandra.cql.core.CqlTemplate$6" filename="org/springdata/cassandra/cql/core/CqlTemplate.java" line-rate="1.0" branch-rate="1.0" complexity="1.6222222222222222">
 					<methods>
 						<method name="&lt;init&gt;" signature="(Lorg/springdata/cassandra/cql/core/CqlTemplate;Lorg/springdata/cassandra/cql/core/RowCallbackHandler;)V" line-rate="1.0" branch-rate="1.0">
 							<lines>
-								<line number="476" hits="5" branch="false"/>
+								<line number="526" hits="5" branch="false"/>
 							</lines>
 						</method>
 						<method name="extractData" signature="(Lcom/datastax/driver/core/ResultSet;)Ljava/lang/Object;" line-rate="1.0" branch-rate="1.0">
 							<lines>
-								<line number="481" hits="5" branch="true" condition-coverage="100% (2/2)">
+								<line number="531" hits="5" branch="true" condition-coverage="100% (2/2)">
 									<conditions>
 										<condition number="0" type="jump" coverage="100%"/>
 									</conditions>
 								</line>
-								<line number="482" hits="8" branch="false"/>
-								<line number="483" hits="8" branch="false"/>
-								<line number="485" hits="5" branch="false"/>
+								<line number="532" hits="8" branch="false"/>
+								<line number="533" hits="8" branch="false"/>
+								<line number="535" hits="5" branch="false"/>
 							</lines>
 						</method>
 					</methods>
 					<lines>
-						<line number="476" hits="5" branch="false"/>
-						<line number="481" hits="5" branch="true" condition-coverage="100% (2/2)">
+						<line number="526" hits="5" branch="false"/>
+						<line number="531" hits="5" branch="true" condition-coverage="100% (2/2)">
 							<conditions>
 								<condition number="0" type="jump" coverage="100%"/>
 							</conditions>
 						</line>
-						<line number="482" hits="8" branch="false"/>
-						<line number="483" hits="8" branch="false"/>
-						<line number="485" hits="5" branch="false"/>
+						<line number="532" hits="8" branch="false"/>
+						<line number="533" hits="8" branch="false"/>
+						<line number="535" hits="5" branch="false"/>
 					</lines>
 				</class>
-				<class name="org.springdata.cassandra.cql.core.CqlTemplate$7" filename="org/springdata/cassandra/cql/core/CqlTemplate.java" line-rate="1.0" branch-rate="1.0" complexity="1.736842105263158">
+				<class name="org.springdata.cassandra.cql.core.CqlTemplate$7" filename="org/springdata/cassandra/cql/core/CqlTemplate.java" line-rate="1.0" branch-rate="1.0" complexity="1.6222222222222222">
 					<methods>
 						<method name="&lt;init&gt;" signature="(Lorg/springdata/cassandra/cql/core/CqlTemplate;Lorg/springdata/cassandra/cql/core/RowMapper;)V" line-rate="1.0" branch-rate="1.0">
 							<lines>
@@ -3436,149 +3519,149 @@
 						</method>
 						<method name="extractData" signature="(Lcom/datastax/driver/core/ResultSet;)Ljava/lang/Object;" line-rate="1.0" branch-rate="1.0">
 							<lines>
-								<line number="496" hits="10" branch="false"/>
+								<line number="546" hits="10" branch="false"/>
 							</lines>
 						</method>
 						<method name="extractData" signature="(Lcom/datastax/driver/core/ResultSet;)Ljava/util/List;" line-rate="1.0" branch-rate="1.0">
 							<lines>
-								<line number="501" hits="5" branch="false"/>
-								<line number="503" hits="5" branch="false"/>
-								<line number="504" hits="5" branch="true" condition-coverage="100% (2/2)">
+								<line number="551" hits="5" branch="false"/>
+								<line number="553" hits="5" branch="false"/>
+								<line number="554" hits="5" branch="true" condition-coverage="100% (2/2)">
 									<conditions>
 										<condition number="0" type="jump" coverage="100%"/>
 									</conditions>
 								</line>
-								<line number="505" hits="12" branch="false"/>
-								<line number="506" hits="12" branch="false"/>
-								<line number="507" hits="12" branch="false"/>
-								<line number="509" hits="5" branch="false"/>
+								<line number="555" hits="12" branch="false"/>
+								<line number="556" hits="12" branch="false"/>
+								<line number="557" hits="12" branch="false"/>
+								<line number="559" hits="5" branch="false"/>
 							</lines>
 						</method>
 					</methods>
 					<lines>
-						<line number="496" hits="10" branch="false"/>
-						<line number="501" hits="5" branch="false"/>
-						<line number="503" hits="5" branch="false"/>
-						<line number="504" hits="5" branch="true" condition-coverage="100% (2/2)">
+						<line number="546" hits="10" branch="false"/>
+						<line number="551" hits="5" branch="false"/>
+						<line number="553" hits="5" branch="false"/>
+						<line number="554" hits="5" branch="true" condition-coverage="100% (2/2)">
 							<conditions>
 								<condition number="0" type="jump" coverage="100%"/>
 							</conditions>
 						</line>
-						<line number="505" hits="12" branch="false"/>
-						<line number="506" hits="12" branch="false"/>
-						<line number="507" hits="12" branch="false"/>
-						<line number="509" hits="5" branch="false"/>
+						<line number="555" hits="12" branch="false"/>
+						<line number="556" hits="12" branch="false"/>
+						<line number="557" hits="12" branch="false"/>
+						<line number="559" hits="5" branch="false"/>
 					</lines>
 				</class>
-				<class name="org.springdata.cassandra.cql.core.CqlTemplate$8" filename="org/springdata/cassandra/cql/core/CqlTemplate.java" line-rate="0.875" branch-rate="0.6666666666666666" complexity="1.736842105263158">
+				<class name="org.springdata.cassandra.cql.core.CqlTemplate$8" filename="org/springdata/cassandra/cql/core/CqlTemplate.java" line-rate="0.875" branch-rate="0.6666666666666666" complexity="1.6222222222222222">
 					<methods>
 						<method name="&lt;init&gt;" signature="(Lorg/springdata/cassandra/cql/core/CqlTemplate;ZLorg/springdata/cassandra/cql/core/RowMapper;)V" line-rate="1.0" branch-rate="1.0">
 							<lines>
-								<line number="522" hits="3" branch="false"/>
+								<line number="572" hits="3" branch="false"/>
 							</lines>
 						</method>
 						<method name="extractData" signature="(Lcom/datastax/driver/core/ResultSet;)Ljava/lang/Object;" line-rate="0.8571428571428571" branch-rate="0.6666666666666666">
 							<lines>
-								<line number="527" hits="3" branch="false"/>
-								<line number="528" hits="3" branch="true" condition-coverage="50% (1/2)">
+								<line number="577" hits="3" branch="false"/>
+								<line number="578" hits="3" branch="true" condition-coverage="50% (1/2)">
 									<conditions>
 										<condition number="0" type="jump" coverage="50%"/>
 									</conditions>
 								</line>
-								<line number="529" hits="0" branch="false"/>
-								<line number="532" hits="3" branch="false"/>
-								<line number="534" hits="3" branch="true" condition-coverage="75% (3/4)">
+								<line number="579" hits="0" branch="false"/>
+								<line number="582" hits="3" branch="false"/>
+								<line number="584" hits="3" branch="true" condition-coverage="75% (3/4)">
 									<conditions>
 										<condition number="0" type="jump" coverage="50%"/>
 										<condition number="1" type="jump" coverage="100%"/>
 									</conditions>
 								</line>
-								<line number="535" hits="1" branch="false"/>
-								<line number="538" hits="2" branch="false"/>
+								<line number="585" hits="1" branch="false"/>
+								<line number="588" hits="2" branch="false"/>
 							</lines>
 						</method>
 					</methods>
 					<lines>
-						<line number="522" hits="3" branch="false"/>
-						<line number="527" hits="3" branch="false"/>
-						<line number="528" hits="3" branch="true" condition-coverage="50% (1/2)">
+						<line number="572" hits="3" branch="false"/>
+						<line number="577" hits="3" branch="false"/>
+						<line number="578" hits="3" branch="true" condition-coverage="50% (1/2)">
 							<conditions>
 								<condition number="0" type="jump" coverage="50%"/>
 							</conditions>
 						</line>
-						<line number="529" hits="0" branch="false"/>
-						<line number="532" hits="3" branch="false"/>
-						<line number="534" hits="3" branch="true" condition-coverage="75% (3/4)">
+						<line number="579" hits="0" branch="false"/>
+						<line number="582" hits="3" branch="false"/>
+						<line number="584" hits="3" branch="true" condition-coverage="75% (3/4)">
 							<conditions>
 								<condition number="0" type="jump" coverage="50%"/>
 								<condition number="1" type="jump" coverage="100%"/>
 							</conditions>
 						</line>
-						<line number="535" hits="1" branch="false"/>
-						<line number="538" hits="2" branch="false"/>
+						<line number="585" hits="1" branch="false"/>
+						<line number="588" hits="2" branch="false"/>
 					</lines>
 				</class>
-				<class name="org.springdata.cassandra.cql.core.CqlTemplate$9" filename="org/springdata/cassandra/cql/core/CqlTemplate.java" line-rate="0.75" branch-rate="0.5" complexity="1.736842105263158">
+				<class name="org.springdata.cassandra.cql.core.CqlTemplate$9" filename="org/springdata/cassandra/cql/core/CqlTemplate.java" line-rate="0.75" branch-rate="0.5" complexity="1.6222222222222222">
 					<methods>
 						<method name="&lt;init&gt;" signature="(Lorg/springdata/cassandra/cql/core/CqlTemplate;Z)V" line-rate="1.0" branch-rate="1.0">
 							<lines>
-								<line number="551" hits="4" branch="false"/>
+								<line number="601" hits="4" branch="false"/>
 							</lines>
 						</method>
 						<method name="extractData" signature="(Lcom/datastax/driver/core/ResultSet;)Ljava/lang/Object;" line-rate="0.7142857142857143" branch-rate="0.5">
 							<lines>
-								<line number="556" hits="4" branch="false"/>
-								<line number="557" hits="4" branch="true" condition-coverage="50% (1/2)">
+								<line number="606" hits="4" branch="false"/>
+								<line number="607" hits="4" branch="true" condition-coverage="50% (1/2)">
 									<conditions>
 										<condition number="0" type="jump" coverage="50%"/>
 									</conditions>
 								</line>
-								<line number="558" hits="0" branch="false"/>
-								<line number="561" hits="4" branch="false"/>
-								<line number="563" hits="4" branch="true" condition-coverage="50% (2/4)">
+								<line number="608" hits="0" branch="false"/>
+								<line number="611" hits="4" branch="false"/>
+								<line number="613" hits="4" branch="true" condition-coverage="50% (2/4)">
 									<conditions>
 										<condition number="0" type="jump" coverage="50%"/>
 										<condition number="1" type="jump" coverage="50%"/>
 									</conditions>
 								</line>
-								<line number="564" hits="0" branch="false"/>
-								<line number="567" hits="4" branch="false"/>
+								<line number="614" hits="0" branch="false"/>
+								<line number="617" hits="4" branch="false"/>
 							</lines>
 						</method>
 					</methods>
 					<lines>
-						<line number="551" hits="4" branch="false"/>
-						<line number="556" hits="4" branch="false"/>
-						<line number="557" hits="4" branch="true" condition-coverage="50% (1/2)">
+						<line number="601" hits="4" branch="false"/>
+						<line number="606" hits="4" branch="false"/>
+						<line number="607" hits="4" branch="true" condition-coverage="50% (1/2)">
 							<conditions>
 								<condition number="0" type="jump" coverage="50%"/>
 							</conditions>
 						</line>
-						<line number="558" hits="0" branch="false"/>
-						<line number="561" hits="4" branch="false"/>
-						<line number="563" hits="4" branch="true" condition-coverage="50% (2/4)">
+						<line number="608" hits="0" branch="false"/>
+						<line number="611" hits="4" branch="false"/>
+						<line number="613" hits="4" branch="true" condition-coverage="50% (2/4)">
 							<conditions>
 								<condition number="0" type="jump" coverage="50%"/>
 								<condition number="1" type="jump" coverage="50%"/>
 							</conditions>
 						</line>
-						<line number="564" hits="0" branch="false"/>
-						<line number="567" hits="4" branch="false"/>
+						<line number="614" hits="0" branch="false"/>
+						<line number="617" hits="4" branch="false"/>
 					</lines>
 				</class>
-				<class name="org.springdata.cassandra.cql.core.CqlTemplate$ArrayIterator" filename="org/springdata/cassandra/cql/core/CqlTemplate.java" line-rate="0.8571428571428571" branch-rate="1.0" complexity="1.736842105263158">
+				<class name="org.springdata.cassandra.cql.core.CqlTemplate$ArrayIterator" filename="org/springdata/cassandra/cql/core/CqlTemplate.java" line-rate="0.8571428571428571" branch-rate="1.0" complexity="1.6222222222222222">
 					<methods>
 						<method name="&lt;init&gt;" signature="([Ljava/lang/Object;)V" line-rate="1.0" branch-rate="1.0">
 							<lines>
-								<line number="819" hits="13" branch="false"/>
-								<line number="821" hits="13" branch="false"/>
-								<line number="822" hits="13" branch="false"/>
-								<line number="823" hits="13" branch="false"/>
+								<line number="879" hits="13" branch="false"/>
+								<line number="881" hits="13" branch="false"/>
+								<line number="882" hits="13" branch="false"/>
+								<line number="883" hits="13" branch="false"/>
 							</lines>
 						</method>
 						<method name="hasNext" signature="()Z" line-rate="1.0" branch-rate="1.0">
 							<lines>
-								<line number="826" hits="78" branch="true" condition-coverage="100% (2/2)">
+								<line number="886" hits="78" branch="true" condition-coverage="100% (2/2)">
 									<conditions>
 										<condition number="0" type="jump" coverage="100%"/>
 									</conditions>
@@ -3587,27 +3670,27 @@
 						</method>
 						<method name="next" signature="()Ljava/lang/Object;" line-rate="1.0" branch-rate="1.0">
 							<lines>
-								<line number="830" hits="39" branch="false"/>
+								<line number="890" hits="39" branch="false"/>
 							</lines>
 						</method>
 						<method name="remove" signature="()V" line-rate="0.0" branch-rate="1.0">
 							<lines>
-								<line number="834" hits="0" branch="false"/>
+								<line number="894" hits="0" branch="false"/>
 							</lines>
 						</method>
 					</methods>
 					<lines>
-						<line number="819" hits="13" branch="false"/>
-						<line number="821" hits="13" branch="false"/>
-						<line number="822" hits="13" branch="false"/>
-						<line number="823" hits="13" branch="false"/>
-						<line number="826" hits="78" branch="true" condition-coverage="100% (2/2)">
+						<line number="879" hits="13" branch="false"/>
+						<line number="881" hits="13" branch="false"/>
+						<line number="882" hits="13" branch="false"/>
+						<line number="883" hits="13" branch="false"/>
+						<line number="886" hits="78" branch="true" condition-coverage="100% (2/2)">
 							<conditions>
 								<condition number="0" type="jump" coverage="100%"/>
 							</conditions>
 						</line>
-						<line number="830" hits="39" branch="false"/>
-						<line number="834" hits="0" branch="false"/>
+						<line number="890" hits="39" branch="false"/>
+						<line number="894" hits="0" branch="false"/>
 					</lines>
 				</class>
 				<class name="org.springdata.cassandra.cql.core.CqlTemplateFactoryBean" filename="org/springdata/cassandra/cql/core/CqlTemplateFactoryBean.java" line-rate="0.8333333333333334" branch-rate="0.5" complexity="1.3333333333333333">
@@ -3640,7 +3723,7 @@
 						</method>
 						<method name="getObjectType" signature="()Ljava/lang/Class;" line-rate="1.0" branch-rate="1.0">
 							<lines>
-								<line number="43" hits="5" branch="false"/>
+								<line number="43" hits="6" branch="false"/>
 							</lines>
 						</method>
 						<method name="isSingleton" signature="()Z" line-rate="1.0" branch-rate="1.0">
@@ -3664,7 +3747,7 @@
 					<lines>
 						<line number="29" hits="2" branch="false"/>
 						<line number="38" hits="0" branch="false"/>
-						<line number="43" hits="5" branch="false"/>
+						<line number="43" hits="6" branch="false"/>
 						<line number="48" hits="4" branch="false"/>
 						<line number="54" hits="2" branch="true" condition-coverage="50% (1/2)">
 							<conditions>
@@ -5102,7 +5185,7 @@
 					<lines>
 					</lines>
 				</class>
-				<class name="org.springdata.cassandra.cql.core.SessionFactoryBean" filename="org/springdata/cassandra/cql/core/SessionFactoryBean.java" line-rate="0.4819277108433735" branch-rate="0.2962962962962963" complexity="4.363636363636363">
+				<class name="org.springdata.cassandra.cql.core.SessionFactoryBean" filename="org/springdata/cassandra/cql/core/SessionFactoryBean.java" line-rate="0.4939759036144578" branch-rate="0.2962962962962963" complexity="4.363636363636363">
 					<methods>
 						<method name="&lt;clinit&gt;" signature="()V" line-rate="1.0" branch-rate="1.0">
 							<lines>
@@ -5266,9 +5349,9 @@
 								<line number="206" hits="2" branch="false"/>
 							</lines>
 						</method>
-						<method name="destroy" signature="()V" line-rate="0.25" branch-rate="0.5">
+						<method name="destroy" signature="()V" line-rate="0.375" branch-rate="0.5">
 							<lines>
-								<line number="172" hits="2" branch="true" condition-coverage="50% (3/6)">
+								<line number="172" hits="1" branch="true" condition-coverage="50% (3/6)">
 									<conditions>
 										<condition number="0" type="jump" coverage="50%"/>
 										<condition number="1" type="jump" coverage="50%"/>
@@ -5281,7 +5364,7 @@
 								<line number="179" hits="0" branch="false"/>
 								<line number="180" hits="0" branch="false"/>
 								<line number="183" hits="2" branch="false"/>
-								<line number="184" hits="0" branch="false"/>
+								<line number="184" hits="1" branch="false"/>
 							</lines>
 						</method>
 						<method name="getObject" signature="()Lcom/datastax/driver/core/Session;" line-rate="1.0" branch-rate="1.0">
@@ -5434,7 +5517,7 @@
 						<line number="160" hits="2" branch="false"/>
 						<line number="165" hits="2" branch="false"/>
 						<line number="167" hits="2" branch="false"/>
-						<line number="172" hits="2" branch="true" condition-coverage="50% (3/6)">
+						<line number="172" hits="1" branch="true" condition-coverage="50% (3/6)">
 							<conditions>
 								<condition number="0" type="jump" coverage="50%"/>
 								<condition number="1" type="jump" coverage="50%"/>
@@ -5447,7 +5530,7 @@
 						<line number="179" hits="0" branch="false"/>
 						<line number="180" hits="0" branch="false"/>
 						<line number="183" hits="2" branch="false"/>
-						<line number="184" hits="0" branch="false"/>
+						<line number="184" hits="1" branch="false"/>
 						<line number="187" hits="2" branch="false"/>
 						<line number="188" hits="2" branch="false"/>
 						<line number="191" hits="2" branch="false"/>
