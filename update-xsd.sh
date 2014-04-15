@@ -6,4 +6,4 @@ cp ../spring-data-cassandra/cassandra/src/main/resources/org/springdata/cassandr
 
 rm -rf schema/ehcache/*
 cp ../spring-data-ehcache/src/main/resources/org/springdata/ehcache/config/spring-ehcache-1.0.xsd schema/ehcache/
-
+cp schema/ehcache/spring-ehcache-1.0.xsd schema/ehcache/spring-ehcache.xsd
