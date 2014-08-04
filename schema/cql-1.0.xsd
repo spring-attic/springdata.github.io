@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<xsd:schema xmlns="http://www.springdata.org/schema/cassandra-cql"
+<xsd:schema xmlns="http://www.springdata.org/schema/cql"
 	xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns:tool="http://www.springframework.org/schema/tool"
-	targetNamespace="http://www.springdata.org/schema/cassandra-cql"
+	targetNamespace="http://www.springdata.org/schema/cql"
 	elementFormDefault="qualified" attributeFormDefault="unqualified">
 
 	<xsd:import namespace="http://www.springframework.org/schema/tool"
@@ -18,7 +18,7 @@ Defines the configuration elements for the Spring Data Cassandra Driver support.
 	<xsd:element name="cluster" type="clusterType">
 		<xsd:annotation>
 			<xsd:documentation
-				source="org.springdata.cassandra.cql.core.CassandraClusterFactoryBean"><![CDATA[
+				source="org.springdata.cql.core.CassandraClusterFactoryBean"><![CDATA[
 Defines a Cassandra Cluster instance used for accessing Cassandra'.
 			]]></xsd:documentation>
 			<xsd:appinfo>
@@ -44,7 +44,7 @@ Defines a Cassandra Cluster instance used for accessing Cassandra'.
 			<xsd:annotation>
 				<xsd:documentation>
 					The name of the Cassandra Cluster definition (by
-					default "cassandra-cluster")
+					default "cql-cluster")
 				</xsd:documentation>
 			</xsd:annotation>
 		</xsd:attribute>
@@ -163,7 +163,7 @@ RetryPolicy implementation.
 	<xsd:element name="session" type="sessionType">
 		<xsd:annotation>
 			<xsd:documentation
-				source="org.springdata.cassandra.cql.core.SessionFactoryBean"><![CDATA[
+				source="org.springdata.cql.core.SessionFactoryBean"><![CDATA[
 Defines a Cassandra Session instance.
 			]]></xsd:documentation>
 			<xsd:appinfo>
@@ -183,7 +183,7 @@ Defines a Cassandra Session instance.
 			<xsd:annotation>
 				<xsd:documentation>
 					The name of the Session definition (by default
-					"cassandra-session")
+					"cql-session")
 				</xsd:documentation>
 			</xsd:annotation>
 		</xsd:attribute>
@@ -194,26 +194,26 @@ The keyspace name of the Cassandra database.
 							]]></xsd:documentation>
 			</xsd:annotation>
 		</xsd:attribute>
-		<xsd:attribute name="cassandra-cluster-ref" type="clusterRef"
+		<xsd:attribute name="cluster-ref" type="clusterRef"
 			use="optional">
 			<xsd:annotation>
 				<xsd:documentation><![CDATA[
-The reference to a Cassandra Cluster instance. Will default to 'cassandra-cluster'.
+The reference to a Cassandra Cluster instance. Will default to 'cql-cluster'.
                                         ]]>
 				</xsd:documentation>
 			</xsd:annotation>
 		</xsd:attribute>
 	</xsd:complexType>
 
-	<xsd:element name="cql-template" type="cqlTemplateType">
+	<xsd:element name="template" type="cqlTemplateType">
 		<xsd:annotation>
 			<xsd:documentation
-				source="org.springdata.cassandra.cql.core.CqlTemplateFactoryBean"><![CDATA[
+				source="org.springdata.cql.core.CqlTemplateFactoryBean"><![CDATA[
 Defines a CqlTemplate instance.
 			]]></xsd:documentation>
 			<xsd:appinfo>
 				<tool:annotation>
-					<tool:exports type="org.springdata.cassandra.cql.core.CqlTemplate" />
+					<tool:exports type="org.springdata.cql.core.CqlTemplate" />
 				</tool:annotation>
 			</xsd:appinfo>
 		</xsd:annotation>
@@ -235,11 +235,11 @@ The keyspace name of the Cassandra database.
 							]]></xsd:documentation>
 			</xsd:annotation>
 		</xsd:attribute>
-		<xsd:attribute name="cassandra-session-ref" type="sessionRef"
+		<xsd:attribute name="session-ref" type="sessionRef"
 			use="optional">
 			<xsd:annotation>
 				<xsd:documentation><![CDATA[
-The reference to a Cassandra Session instance. Will default to 'cassandra-session'.
+The reference to a Cassandra Session instance. Will default to 'cql-session'.
                                         ]]>
 				</xsd:documentation>
 			</xsd:annotation>
