@@ -1,0 +1,11 @@
+org.springdata.cql.builder
+org.springdata.cql.config
+org.springdata.cql.config.java
+org.springdata.cql.config.xml
+org.springdata.cql.core
+org.springdata.cql.generator
+org.springdata.cql.option
+org.springdata.cql.spec
+org.springdata.cql.support
+org.springdata.cql.support.exception
+org.springdata.cql.util

@@ -3,16 +3,6 @@ org.springdata.cassandra.config.java
 org.springdata.cassandra.config.xml
 org.springdata.cassandra.convert
 org.springdata.cassandra.core
-org.springdata.cassandra.cql.config
-org.springdata.cassandra.cql.config.java
-org.springdata.cassandra.cql.config.xml
-org.springdata.cassandra.cql.core
-org.springdata.cassandra.cql.generator
-org.springdata.cassandra.cql.option
-org.springdata.cassandra.cql.spec
-org.springdata.cassandra.cql.support
-org.springdata.cassandra.cql.support.exception
-org.springdata.cassandra.cql.util
 org.springdata.cassandra.mapping
 org.springdata.cassandra.repository
 org.springdata.cassandra.repository.config
